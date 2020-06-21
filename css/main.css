@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Eurostile";
   src: url("../fonts/bdeb0954-a29d-41df-bd63-b1eb58201b11.eot?#iefix");
@@ -6172,6 +6173,11 @@ html {
   background-position: right 0.625rem center;
   padding-right: 1.875rem; }
 
+.form-control.is-invalid:focus {
+  -webkit-box-shadow: 0 0 5px 0.1rem rgba(220, 53, 69, 0.25);
+     -moz-box-shadow: 0 0 5px 0.1rem rgba(220, 53, 69, 0.25);
+          box-shadow: 0 0 5px 0.1rem rgba(220, 53, 69, 0.25); }
+
 .col_find_prod {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 100%;
@@ -6272,12 +6278,13 @@ html {
   display: none;
   margin: -1px 0 15px 0;
   overflow-y: scroll;
-  max-height: 300px; }
+  max-height: 305px; }
   .list-search_is-opened {
     display: block; }
   .list-search__inner {
     list-style: none;
-    padding: 0 0 0 27px; }
+    padding: 0 0 0 27px;
+    margin: 0; }
   .list-search__link {
     font-size: 14px;
     line-height: 15px;
@@ -6362,7 +6369,7 @@ html {
     .steps li:last-child:after {
       display: none; }
 
-.progress {
+пш .progress {
   list-style: none;
   display: -webkit-flex;
   display: -ms-flexbox;
