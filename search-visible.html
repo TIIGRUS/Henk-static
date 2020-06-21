@@ -10,7 +10,7 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:title" content="Guide">
 		<title>Guide</title>
-		<link rel="stylesheet" href="css/main.css?v=1592768218792">
+		<link rel="stylesheet" href="css/main.css?v=1592771990207">
 	</head>
 	<body>
 		<div class="container my-5">
@@ -24,15 +24,14 @@
 					</ul>
 					<div class="tab-content" id="FindProductiocts">
 						<div class="tab-pane tab-pane_find fade show active" id="search-app" role="tabpanel" aria-labelledby="search-app-tab">
-							<form action="#">
+							<!-- Класс ".form_is-invalid" для "form" показывает блок ошибки.-->
+							<form class="form_is-invalid" action="#">
 								<div class="form-group">
 									<input class="form-control form-control_icon is-invalid" type="text" placeholder="Choose market">
-									<div class="invalid-feedback">Please select a valid state.</div>
 								</div>
 								<div class="form-group">
 									<input class="form-control form-control_icon" type="text" placeholder="Choose type">
-									<div class="invalid-feedback">Please select a valid state.</div>
-									<!-- Класс .list-search_is-opened для всего блока ul отображает список.-->
+									<!-- Класс .list-search_is-opened для всего блока отображает список.-->
 									<div class="list-search list-search_is-opened"><a class="list-search__link list-search__link_category" href="#">Film tapes</a>
 										<ul class="list-search__inner">
 											<li class="list-search__inner-item"><a class="list-search__link" href="#">	Glass retention tapes</a></li>
@@ -79,8 +78,8 @@
 								</div>
 								<div class="form-group">
 									<input class="form-control form-control_icon" type="text" placeholder="Choose application">
-									<div class="invalid-feedback">Please select a valid state.</div>
 								</div>
+								<div class="form-group invalid-feedback">Please select a valid state.</div>
 								<button class="btn btn-primary mx-md-0 mx-auto d-block" type="submit">Search</button>
 							</form>
 						</div>
@@ -89,8 +88,8 @@
 								<div class="form-group">
 									<label class="pt-2" for="product-number">Enter a product number or name:</label>
 									<input class="form-control" type="Text" id="product-number" placeholder="Enter value">
-									<div class="invalid-feedback">Please select a valid state.</div>
 								</div>
+								<div class="form-group invalid-feedback">Please select a valid state.</div>
 								<button class="btn btn-primary" type="submit">Search</button>
 							</form>
 						</div>
@@ -140,7 +139,7 @@
 				</div>
 			</div>
 		</div>
-		<script src="js/vendor.js?v=1592768218793"></script>
-		<script src="js/main.js?v=1592768218793"></script>
+		<script src="js/vendor.js?v=1592771990208"></script>
+		<script src="js/main.js?v=1592771990208"></script>
 	</body>
 </html>
