@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Catalog | Henk</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="icon" type="image/png" href="img/icons/favicon.png">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/toffiflex.min.css">
+	<link rel="stylesheet" href="css/flex_assets.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="main-header">
+
+	</header>
+	<main class="main-content">
+		<div class="container pt-1_5em">
+			<div id="top_search-panel" class="top_search-panel">
+				<div>
+					<div class="tf-search-outer">
+						<form  id="topSearchForm" class="search-form" action="/" method="get">
+							<label for="search" style="display: none"></label>
+							<input id="search" type="text" class="form-control" name="s" value="" placeholder="Search by number or title" autocomplete="off" required>
+							<button type="submit"></button>
+						</form>
+					</div>
+				</div>
+				<div>
+					<div class="size-16">
+						For selected items (2):
+					</div>
+				</div>
+				<div>
+					<div class="info-button">
+						Request a datasheet
+					</div>
+				</div>
+				<div>
+					<div class="info-button">
+						Request a sample
+					</div>
+				</div>
+			</div>
+			<div id="catFilter" class="some-filter">
+				<div class="filter-title">
+					Filter the list:
+				</div>
+				<div class="filter-inner flex-0_5em items-center">
+					<div class="col-xs-6 col-sm-4">
+						<label for="market-select" style="display: none;"></label>
+						<select class="form-control form-select" id="market-select">
+							<option value="" selected disabled>Any market</option>
+							<option value="1">Market 1</option>
+							<option value="2">Market 2</option>
+							<option value="3">Market 3</option>
+							<option value="4">Market 4</option>
+							<option value="5">Market 5</option>
+							<option value="6">Market 6</option>
+						</select>
+					</div>
+					<div class="col-xs-6 col-sm-4">
+						<label for="subtype-select" style="display: none;"></label>
+						<select class="form-control form-select" id="subtype-select">
+							<option value="" selected disabled>Any subtype</option>
+							<option value="1">Subtype 1</option>
+							<option value="2">Subtype 2</option>
+							<option value="3">Subtype 3</option>
+							<option value="4">Subtype 4</option>
+							<option value="5">Subtype 5</option>
+							<option value="6">Subtype 6</option>
+						</select>
+					</div>
+					<div class="col-xs-6 col-sm-4">
+						<label for="application-select" style="display: none;"></label>
+						<select class="form-control form-select" id="application-select">
+							<option value="" selected disabled>Any application</option>
+							<option value="1">Application 1</option>
+							<option value="2">Application 2</option>
+							<option value="3">Application 3</option>
+							<option value="4">Application 4</option>
+							<option value="5">Application 5</option>
+							<option value="6">Application 6</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="filter-table pt-0_5em">
+				<table class="table table-striped table-responsive">
+					<thead>
+						<tr>
+							<th scope="col"></th>
+							<th scope="col">Image</th>
+							<th scope="col">Tape</th>
+							<th scope="col" class="ic-th f-true">Carrier</th>
+							<th scope="col" class="ic-th">Color</th>
+							<th scope="col" class="ic-th">Thickness</th>
+							<th scope="col" class="ic-th">Mesh</th>
+							<th scope="col"></th>
+							<th scope="col"></th>
+						</tr>
+					</thead>
+					<tbody>
+					<tr>
+						<td>
+							<div class="checkbox-block">
+								<input type="checkbox" name="filledIn" class="filled-in cb" id="filled-in-box1" />
+								<label for="filled-in-box1"></label>
+							</div>
+						</td>
+						<td data-label="Наименование">
+							<div class="td-thumb">
+								<img src="img/products/product-1.png" alt="product">
+							</div>
+						</td>
+						<td data-label="Требуется">17200 - Double-sided PVC tape</td>
+						<td data-label="В наличии">PVC film</td>
+						<td data-label="Дата поставки">Brown</td>
+						<td data-label="Дата поставки">0.24 mm</td>
+						<td data-label="Дата поставки">10</td>
+						<td data-label="Дата поставки">Request a datasheet</td>
+						<td data-label="Дата поставки">Request a sample</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="checkbox-block">
+								<input type="checkbox" name="filledIn" class="filled-in cb" id="filled-in-box2" />
+								<label for="filled-in-box2"></label>
+							</div>
+						</td>
+						<td data-label="Наименование">
+							<div class="td-thumb">
+								<img src="img/products/product-1.png" alt="product">
+							</div>
+						</td>
+						<td data-label="Требуется">17200 - Double-sided PVC tape</td>
+						<td data-label="В наличии">PVC film</td>
+						<td data-label="Дата поставки">Brown</td>
+						<td data-label="Дата поставки">0.24 mm</td>
+						<td data-label="Дата поставки">10</td>
+						<td data-label="Дата поставки">Request a datasheet</td>
+						<td data-label="Дата поставки">Request a sample</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="checkbox-block">
+								<input type="checkbox" name="filledIn" class="filled-in cb" id="filled-in-box3" />
+								<label for="filled-in-box3"></label>
+							</div>
+						</td>
+						<td data-label="Наименование">
+							<div class="td-thumb">
+								<img src="img/products/product-1.png" alt="product">
+							</div>
+						</td>
+						<td data-label="Требуется">17200 - Double-sided PVC tape</td>
+						<td data-label="В наличии">PVC film</td>
+						<td data-label="Дата поставки">Brown</td>
+						<td data-label="Дата поставки">0.24 mm</td>
+						<td data-label="Дата поставки">10</td>
+						<td data-label="Дата поставки">Request a datasheet</td>
+						<td data-label="Дата поставки">Request a sample</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="checkbox-block">
+								<input type="checkbox" name="filledIn" class="filled-in cb" id="filled-in-box4" />
+								<label for="filled-in-box4"></label>
+							</div>
+						</td>
+						<td data-label="Наименование">
+							<div class="td-thumb">
+								<img src="img/products/product-1.png" alt="product">
+							</div>
+						</td>
+						<td data-label="Требуется">17200 - Double-sided PVC tape</td>
+						<td data-label="В наличии">PVC film</td>
+						<td data-label="Дата поставки">Brown</td>
+						<td data-label="Дата поставки">0.24 mm</td>
+						<td data-label="Дата поставки">10</td>
+						<td data-label="Дата поставки">Request a datasheet</td>
+						<td data-label="Дата поставки">Request a sample</td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="bottom-block">
+				<div class="bottom-first">
+					<div>
+						<div class="size-16">
+							For selected items (2):
+						</div>
+					</div>
+					<div>
+						<div class="info-button">
+							Request a datasheet
+						</div>
+					</div>
+					<div>
+						<div class="info-button">
+							Request a sample
+						</div>
+					</div>
+				</div>
+				<div class="bottom-nav">
+					<div class="d-flex items-center">
+						<div class="size-16">
+							Show on page:
+						</div>
+						<div class="tf-page-switcher">
+							<label for="page-select" style="display: none;"></label>
+							<select class="form-control page-select" id="page-select">
+								<option value="" selected disabled>10</option>
+								<option value="1">10</option>
+								<option value="2">15</option>
+								<option value="3">25</option>
+								<option value="4">50</option>
+							</select>
+						</div>
+					</div>
+					<div class="d-flex items-center">
+						<div class="size-16">
+							Page:
+						</div>
+						<div class="ml-0_4em">
+							<ul class="pagination">
+								<li class="current-page-item"><span>1</span></li>
+								<li><a href="#">2</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="main-footer pt-3em pb-3em">
+		<div class="container">
+			Footer
+		</div>
+	</footer>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/dropkick.js"></script>
+	<script async src="js/main.js"></script>
+</body>
+</html>
