@@ -10,7 +10,7 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:title" content="Guide">
 		<title>Guide</title>
-		<link rel="stylesheet" href="css/main.css?v=1592837184675">
+		<link rel="stylesheet" href="css/main.css?v=1592839637326">
 	</head>
 	<body>
 		<div class="container my-5">
@@ -24,10 +24,10 @@
 					</ul>
 					<div class="tab-content" id="FindProductiocts">
 						<div class="tab-pane tab-pane_find fade show active" id="search-app" role="tabpanel" aria-labelledby="search-app-tab">
-							<!-- Класс ".form_is-invalid" для "form" показывает блок ошибки.-->
-							<form class="form_is-invalid" action="#">
+							<!-- Класс ".needs-validation" для "form" показывает блок ошибки. Атрубит "novalidate" нужен для формы.-->
+							<form class="needs-validation" action="#" novalidate>
 								<div class="form-group">
-									<select class="selectpicker" title="Choose market" data-live-search="true" data-live-search-placeholder="Search" data-width="100%">
+									<select class="selectpicker" title="Choose market" data-live-search="true" data-live-search-placeholder="Search" data-width="100%" required>
 										<option class="dropdown-item_title">Film tapes</option>
 										<option>Glass retention tapes</option>
 										<option>Protection films</option>
@@ -64,7 +64,7 @@
 									</select>
 								</div>
 								<div class="form-group">
-									<select class="selectpicker" title="Choose market" data-live-search="true" data-live-search-placeholder="Search" data-width="100%">
+									<select class="selectpicker" title="Choose market" data-live-search="true" data-live-search-placeholder="Search" data-width="100%" required>
 										<option class="dropdown-item_title">Film tapes</option>
 										<option>Glass retention tapes</option>
 										<option>Protection films</option>
@@ -101,7 +101,7 @@
 									</select>
 								</div>
 								<div class="form-group">
-									<select class="selectpicker" title="Choose market" data-live-search="true" data-live-search-placeholder="Search" data-width="100%">
+									<select class="selectpicker" title="Choose market" data-live-search="true" data-live-search-placeholder="Search" data-width="100%" required>
 										<option class="dropdown-item_title">Film tapes</option>
 										<option>Glass retention tapes</option>
 										<option>Protection films</option>
@@ -142,10 +142,10 @@
 							</form>
 						</div>
 						<div class="tab-pane tab-pane_find fade" id="search-title" role="tabpanel" aria-labelledby="search-title-tab">
-							<form action="#">
+							<form class="needs-validation" action="#" novalidate>
 								<div class="form-group">
 									<label class="pt-2" for="product-number">Enter a product number or name:</label>
-									<input class="form-control" type="Text" id="product-number" placeholder="Enter value">
+									<input class="form-control" type="Text" id="product-number" placeholder="Enter value" required>
 								</div>
 								<div class="form-group invalid-feedback">Please select a valid state.</div>
 								<button class="btn btn-primary" type="submit">Search</button>
@@ -197,7 +197,7 @@
 				</div>
 			</div>
 		</div>
-		<script src="js/vendor.js?v=1592837184675"></script>
-		<script src="js/main.js?v=1592837184675"></script>
+		<script src="js/vendor.js?v=1592839637327"></script>
+		<script src="js/main.js?v=1592839637327"></script>
 	</body>
 </html>
