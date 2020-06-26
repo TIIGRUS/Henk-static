@@ -169,10 +169,6 @@ __webpack_require__.r(__webpack_exports__);
 $('.selectpicker').selectpicker({
   style: 'form-control form-control_icon',
   styleBase: ''
-});
-$('.table__filter').selectpicker({
-  style: 'table-list__title',
-  styleBase: ''
 }); // Moadla filte callbacks
 
 $('#modalFilters').on('show.bs.modal', function (e) {

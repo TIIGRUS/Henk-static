@@ -10,6 +10,12 @@
 <symbol id="chevron" viewBox="0 0 14 7">
 	<path fill="#0E3154" d="M14 0H0l7 7 7-7z"/>
 </symbol>
+<symbol id="filter-solid" viewBox="0 0 20 14">
+	<path fill="#0E3154" stroke="#0E3154" d="M18 1H2l6.5 7v5H11V8l7-7z"/>
+</symbol>
+<symbol id="filter-stroke" viewBox="0 0 20 14">
+	<path stroke="#0E3154" d="M18 1H2l6.5 7v5H11V8l7-7z"/>
+</symbol>
 <symbol id="filter" viewBox="0 0 20 14">
 	<path d="M18 1H2l6.5 7v5H11V8l7-7z"/>
 </symbol>

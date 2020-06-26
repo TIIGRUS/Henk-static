@@ -7847,7 +7847,7 @@ html {
   line-height: 1; }
   .product-list__open-filter-icon {
     height: 32px;
-    width: 55px;
+    width: 47px;
     fill: #0E3154; }
   .product-list__open-filter:hover {
     text-decoration: none; }
@@ -7874,6 +7874,32 @@ html {
 
 .table-list__header {
   border-bottom: 1px solid #E6E6E6; }
+  .table-list__header .form-control.dropdown-toggle {
+    padding: 0;
+    border: none;
+    color: #0E3154;
+    font-weight: bold;
+    height: auto;
+    font-size: 1rem; }
+    .table-list__header .form-control.dropdown-toggle:hover, .table-list__header .form-control.dropdown-toggle:focus, .table-list__header .bootstrap-select.form-control_lg .dropdown-toggle:focus, .bootstrap-select.form-control_lg .table-list__header .dropdown-toggle:focus, .table-list__header .bootstrap-select.show .dropdown-toggle.form-control, .bootstrap-select.show .table-list__header .dropdown-toggle.form-control,
+    .table-list__header .bootstrap-select.show.form-control_lg .dropdown-toggle, .bootstrap-select.show.form-control_lg .table-list__header .dropdown-toggle {
+      -webkit-box-shadow: none;
+         -moz-box-shadow: none;
+              box-shadow: none; }
+    .table-list__header .form-control.dropdown-toggle.form-control_icon {
+      padding-right: 25px;
+      background-image: url(../images/sprites/svg/filter-stroke.svg);
+      -webkit-background-size: 16px 12px;
+         -moz-background-size: 16px 12px;
+              background-size: 16px 12px;
+      background-position: center right; }
+  .table-list__header .show .form-control.dropdown-toggle.form-control_icon {
+    background-image: url(../images/sprites/svg/filter-solid.svg); }
+  .table-list__header .dropdown-menu {
+    min-width: 150px; }
+    .table-list__header .dropdown-menu .dropdown-item {
+      padding: 0 12px;
+      white-space: nowrap; }
 
 .table-list th, .table-list__item {
   text-align: center;
