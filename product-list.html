@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/main.css?v=1593178701010">
+	</head>
+	<body>
+		<div class="container">
+			<div class="product-list py-5">
+				<div class="modal fade modal_is-visible-lg" tabindex="-1" role="dialog" aria-labelledby="modalFilterAll" aria-hidden="false" id="modalFilters">
+					<div class="modal-dialog modal-dialog_width_full_lg m-md-0" role="document">
+						<div class="modal-content modal_reset_border_lg">
+							<div class="modal-header d-md-none modal_reset_border_lg p-md-0 mb-md-0" aria-hidden="true">
+								<h4 class="modal-title text-center w-100 m-0" id="my-modal-title">Filter and search</h4>
+								<button class="close d-md-none" data-dismiss="modal" aria-label="Close" aria-hidden="true"><span aria-hidden="true">&times;</span></button>
+							</div>
+							<div class="modal-body p-md-0">
+								<form action="#">
+									<div class="row align-items-center mx-n2 mb-md-4 pb-md-1">
+										<div class="col-lg col-12 px-2 mb-4 mb-lg-0">
+											<div class="form-group m-0">
+												<input class="form-control form-control-lg form-control_icon_left" type="Text" placeholder="Search by number or title">
+											</div>
+										</div>
+										<div class="col-md-auto d-md-block d-none px-2 product-list__text">For selected items (2):</div>
+										<div class="col-lg-auto col-md d-md-block d-none px-2">
+											<button class="btn btn-primary btn-lg btn-block" type="button">Request a datasheet</button>
+										</div>
+										<div class="col-lg-auto col-md d-md-block d-none px-2">
+											<button class="btn btn-primary btn-lg btn-block" type="button">Request a sample</button>
+										</div>
+									</div>
+									<div class="product-list__filter">
+										<div class="row align-items-center mx-n2">
+											<div class="col col-lg-auto col-md-12 d-md-block d-none px-2 mb-2 mb-lg-0">
+												<div class="product-list__filter-title">Filter the list:</div>
+											</div>
+											<div class="col-12 d-md-none px-2">
+												<div class="form-group m-md-0">
+													<select class="selectpicker form-control_lg" title="Any type" data-live-search="true" data-live-search-placeholder="Search" data-width="100%" required>
+														<option class="dropdown-item_title">Film tapes</option>
+														<option>Glass retention tapes</option>
+														<option>Protection films</option>
+														<option>PVC tapes</option>
+														<option>PET Films</option>
+														<option class="dropdown-item_title">Insulating tapes</option>
+														<option>PVC insulating tapes</option>
+														<option>Cable protection tapes</option>
+														<option class="dropdown-item_title">Double sided tapes</option>
+														<option>Double sided PE foam tapes</option>
+														<option>Double sided acrylic foam tapes</option>
+														<option>Double sided film tapes</option>
+														<option>Double sided tissue tapes</option>
+														<option>Double sided cloth tapes</option>
+														<option>Double sided transfer tapes</option>
+														<option>Double sided PU tapes</option>
+														<option>Glue strip</option>
+														<option class="dropdown-item_title">Masking tapes</option>
+														<option>Crepe masking tapes</option>
+														<option>Washi masking tapes</option>
+														<option>Trim masking tapes</option>
+														<option class="dropdown-item_title">Cloth and duct tapes</option>
+														<option>Cloth tapes</option>
+														<option>Duct tapes</option>
+														<option class="dropdown-item_title">Fine line tapes</option>
+														<option class="dropdown-item_title">Velcro and Duogrip</option>
+														<option class="dropdown-item_title">Safety tapes</option>
+														<option class="dropdown-item_title">Self amalgamating tapes</option>
+														<option class="dropdown-item_title">Aluminium tapes</option>
+														<option class="dropdown-item_title">Sealing tapes</option>
+														<option>Butyl tapes</option>
+														<option>Single sided sealing tape</option>
+														<option class="dropdown-item_title">PTFE tape</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md px-2">
+												<div class="form-group m-md-0">
+													<select class="selectpicker form-control_lg" title="Any market" data-live-search="true" data-live-search-placeholder="Search" data-width="100%" required>
+														<option class="dropdown-item_title">Film tapes</option>
+														<option>Glass retention tapes</option>
+														<option>Protection films</option>
+														<option>PVC tapes</option>
+														<option>PET Films</option>
+														<option class="dropdown-item_title">Insulating tapes</option>
+														<option>PVC insulating tapes</option>
+														<option>Cable protection tapes</option>
+														<option class="dropdown-item_title">Double sided tapes</option>
+														<option>Double sided PE foam tapes</option>
+														<option>Double sided acrylic foam tapes</option>
+														<option>Double sided film tapes</option>
+														<option>Double sided tissue tapes</option>
+														<option>Double sided cloth tapes</option>
+														<option>Double sided transfer tapes</option>
+														<option>Double sided PU tapes</option>
+														<option>Glue strip</option>
+														<option class="dropdown-item_title">Masking tapes</option>
+														<option>Crepe masking tapes</option>
+														<option>Washi masking tapes</option>
+														<option>Trim masking tapes</option>
+														<option class="dropdown-item_title">Cloth and duct tapes</option>
+														<option>Cloth tapes</option>
+														<option>Duct tapes</option>
+														<option class="dropdown-item_title">Fine line tapes</option>
+														<option class="dropdown-item_title">Velcro and Duogrip</option>
+														<option class="dropdown-item_title">Safety tapes</option>
+														<option class="dropdown-item_title">Self amalgamating tapes</option>
+														<option class="dropdown-item_title">Aluminium tapes</option>
+														<option class="dropdown-item_title">Sealing tapes</option>
+														<option>Butyl tapes</option>
+														<option>Single sided sealing tape</option>
+														<option class="dropdown-item_title">PTFE tape</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md px-2">
+												<div class="form-group m-md-0">
+													<select class="selectpicker form-control_lg" title="Any subtype" data-live-search="true" data-live-search-placeholder="Search" data-width="100%" required>
+														<option class="dropdown-item_title">Film tapes</option>
+														<option>Glass retention tapes</option>
+														<option>Protection films</option>
+														<option>PVC tapes</option>
+														<option>PET Films</option>
+														<option class="dropdown-item_title">Insulating tapes</option>
+														<option>PVC insulating tapes</option>
+														<option>Cable protection tapes</option>
+														<option class="dropdown-item_title">Double sided tapes</option>
+														<option>Double sided PE foam tapes</option>
+														<option>Double sided acrylic foam tapes</option>
+														<option>Double sided film tapes</option>
+														<option>Double sided tissue tapes</option>
+														<option>Double sided cloth tapes</option>
+														<option>Double sided transfer tapes</option>
+														<option>Double sided PU tapes</option>
+														<option>Glue strip</option>
+														<option class="dropdown-item_title">Masking tapes</option>
+														<option>Crepe masking tapes</option>
+														<option>Washi masking tapes</option>
+														<option>Trim masking tapes</option>
+														<option class="dropdown-item_title">Cloth and duct tapes</option>
+														<option>Cloth tapes</option>
+														<option>Duct tapes</option>
+														<option class="dropdown-item_title">Fine line tapes</option>
+														<option class="dropdown-item_title">Velcro and Duogrip</option>
+														<option class="dropdown-item_title">Safety tapes</option>
+														<option class="dropdown-item_title">Self amalgamating tapes</option>
+														<option class="dropdown-item_title">Aluminium tapes</option>
+														<option class="dropdown-item_title">Sealing tapes</option>
+														<option>Butyl tapes</option>
+														<option>Single sided sealing tape</option>
+														<option class="dropdown-item_title">PTFE tape</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md px-2">
+												<div class="form-group m-md-0">
+													<select class="selectpicker form-control_lg" title="Any application" data-live-search="true" data-live-search-placeholder="Search" data-width="100%" required>
+														<option class="dropdown-item_title">Film tapes</option>
+														<option>Glass retention tapes</option>
+														<option>Protection films</option>
+														<option>PVC tapes</option>
+														<option>PET Films</option>
+														<option class="dropdown-item_title">Insulating tapes</option>
+														<option>PVC insulating tapes</option>
+														<option>Cable protection tapes</option>
+														<option class="dropdown-item_title">Double sided tapes</option>
+														<option>Double sided PE foam tapes</option>
+														<option>Double sided acrylic foam tapes</option>
+														<option>Double sided film tapes</option>
+														<option>Double sided tissue tapes</option>
+														<option>Double sided cloth tapes</option>
+														<option>Double sided transfer tapes</option>
+														<option>Double sided PU tapes</option>
+														<option>Glue strip</option>
+														<option class="dropdown-item_title">Masking tapes</option>
+														<option>Crepe masking tapes</option>
+														<option>Washi masking tapes</option>
+														<option>Trim masking tapes</option>
+														<option class="dropdown-item_title">Cloth and duct tapes</option>
+														<option>Cloth tapes</option>
+														<option>Duct tapes</option>
+														<option class="dropdown-item_title">Fine line tapes</option>
+														<option class="dropdown-item_title">Velcro and Duogrip</option>
+														<option class="dropdown-item_title">Safety tapes</option>
+														<option class="dropdown-item_title">Self amalgamating tapes</option>
+														<option class="dropdown-item_title">Aluminium tapes</option>
+														<option class="dropdown-item_title">Sealing tapes</option>
+														<option>Butyl tapes</option>
+														<option>Single sided sealing tape</option>
+														<option class="dropdown-item_title">PTFE tape</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-12 d-md-none px-2">
+												<div class="form-group m-md-0">
+													<select class="selectpicker form-control_lg" title="Any carrier" data-live-search="true" data-live-search-placeholder="Search" data-width="100%" required>
+														<option class="dropdown-item_title">Film tapes</option>
+														<option>Glass retention tapes</option>
+														<option>Protection films</option>
+														<option>PVC tapes</option>
+														<option>PET Films</option>
+														<option class="dropdown-item_title">Insulating tapes</option>
+														<option>PVC insulating tapes</option>
+														<option>Cable protection tapes</option>
+														<option class="dropdown-item_title">Double sided tapes</option>
+														<option>Double sided PE foam tapes</option>
+														<option>Double sided acrylic foam tapes</option>
+														<option>Double sided film tapes</option>
+														<option>Double sided tissue tapes</option>
+														<option>Double sided cloth tapes</option>
+														<option>Double sided transfer tapes</option>
+														<option>Double sided PU tapes</option>
+														<option>Glue strip</option>
+														<option class="dropdown-item_title">Masking tapes</option>
+														<option>Crepe masking tapes</option>
+														<option>Washi masking tapes</option>
+														<option>Trim masking tapes</option>
+														<option class="dropdown-item_title">Cloth and duct tapes</option>
+														<option>Cloth tapes</option>
+														<option>Duct tapes</option>
+														<option class="dropdown-item_title">Fine line tapes</option>
+														<option class="dropdown-item_title">Velcro and Duogrip</option>
+														<option class="dropdown-item_title">Safety tapes</option>
+														<option class="dropdown-item_title">Self amalgamating tapes</option>
+														<option class="dropdown-item_title">Aluminium tapes</option>
+														<option class="dropdown-item_title">Sealing tapes</option>
+														<option>Butyl tapes</option>
+														<option>Single sided sealing tape</option>
+														<option class="dropdown-item_title">PTFE tape</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-12 d-md-none px-2">
+												<div class="form-group m-md-0">
+													<select class="selectpicker form-control_lg" title="Any color" data-live-search="true" data-live-search-placeholder="Search" data-width="100%" required>
+														<option class="dropdown-item_title">Film tapes</option>
+														<option>Glass retention tapes</option>
+														<option>Protection films</option>
+														<option>PVC tapes</option>
+														<option>PET Films</option>
+														<option class="dropdown-item_title">Insulating tapes</option>
+														<option>PVC insulating tapes</option>
+														<option>Cable protection tapes</option>
+														<option class="dropdown-item_title">Double sided tapes</option>
+														<option>Double sided PE foam tapes</option>
+														<option>Double sided acrylic foam tapes</option>
+														<option>Double sided film tapes</option>
+														<option>Double sided tissue tapes</option>
+														<option>Double sided cloth tapes</option>
+														<option>Double sided transfer tapes</option>
+														<option>Double sided PU tapes</option>
+														<option>Glue strip</option>
+														<option class="dropdown-item_title">Masking tapes</option>
+														<option>Crepe masking tapes</option>
+														<option>Washi masking tapes</option>
+														<option>Trim masking tapes</option>
+														<option class="dropdown-item_title">Cloth and duct tapes</option>
+														<option>Cloth tapes</option>
+														<option>Duct tapes</option>
+														<option class="dropdown-item_title">Fine line tapes</option>
+														<option class="dropdown-item_title">Velcro and Duogrip</option>
+														<option class="dropdown-item_title">Safety tapes</option>
+														<option class="dropdown-item_title">Self amalgamating tapes</option>
+														<option class="dropdown-item_title">Aluminium tapes</option>
+														<option class="dropdown-item_title">Sealing tapes</option>
+														<option>Butyl tapes</option>
+														<option>Single sided sealing tape</option>
+														<option class="dropdown-item_title">PTFE tape</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-12 d-md-none px-2">
+												<div class="form-group m-md-0">
+													<select class="selectpicker form-control_lg" title="Any thickness" data-live-search="true" data-live-search-placeholder="Search" data-width="100%" required>
+														<option class="dropdown-item_title">Film tapes</option>
+														<option>Glass retention tapes</option>
+														<option>Protection films</option>
+														<option>PVC tapes</option>
+														<option>PET Films</option>
+														<option class="dropdown-item_title">Insulating tapes</option>
+														<option>PVC insulating tapes</option>
+														<option>Cable protection tapes</option>
+														<option class="dropdown-item_title">Double sided tapes</option>
+														<option>Double sided PE foam tapes</option>
+														<option>Double sided acrylic foam tapes</option>
+														<option>Double sided film tapes</option>
+														<option>Double sided tissue tapes</option>
+														<option>Double sided cloth tapes</option>
+														<option>Double sided transfer tapes</option>
+														<option>Double sided PU tapes</option>
+														<option>Glue strip</option>
+														<option class="dropdown-item_title">Masking tapes</option>
+														<option>Crepe masking tapes</option>
+														<option>Washi masking tapes</option>
+														<option>Trim masking tapes</option>
+														<option class="dropdown-item_title">Cloth and duct tapes</option>
+														<option>Cloth tapes</option>
+														<option>Duct tapes</option>
+														<option class="dropdown-item_title">Fine line tapes</option>
+														<option class="dropdown-item_title">Velcro and Duogrip</option>
+														<option class="dropdown-item_title">Safety tapes</option>
+														<option class="dropdown-item_title">Self amalgamating tapes</option>
+														<option class="dropdown-item_title">Aluminium tapes</option>
+														<option class="dropdown-item_title">Sealing tapes</option>
+														<option>Butyl tapes</option>
+														<option>Single sided sealing tape</option>
+														<option class="dropdown-item_title">PTFE tape</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-12 d-md-none px-2">
+												<div class="form-group m-md-0">
+													<select class="selectpicker form-control_lg" title="Any mesh" data-live-search="true" data-live-search-placeholder="Search" data-width="100%" required>
+														<option class="dropdown-item_title">Film tapes</option>
+														<option>Glass retention tapes</option>
+														<option>Protection films</option>
+														<option>PVC tapes</option>
+														<option>PET Films</option>
+														<option class="dropdown-item_title">Insulating tapes</option>
+														<option>PVC insulating tapes</option>
+														<option>Cable protection tapes</option>
+														<option class="dropdown-item_title">Double sided tapes</option>
+														<option>Double sided PE foam tapes</option>
+														<option>Double sided acrylic foam tapes</option>
+														<option>Double sided film tapes</option>
+														<option>Double sided tissue tapes</option>
+														<option>Double sided cloth tapes</option>
+														<option>Double sided transfer tapes</option>
+														<option>Double sided PU tapes</option>
+														<option>Glue strip</option>
+														<option class="dropdown-item_title">Masking tapes</option>
+														<option>Crepe masking tapes</option>
+														<option>Washi masking tapes</option>
+														<option>Trim masking tapes</option>
+														<option class="dropdown-item_title">Cloth and duct tapes</option>
+														<option>Cloth tapes</option>
+														<option>Duct tapes</option>
+														<option class="dropdown-item_title">Fine line tapes</option>
+														<option class="dropdown-item_title">Velcro and Duogrip</option>
+														<option class="dropdown-item_title">Safety tapes</option>
+														<option class="dropdown-item_title">Self amalgamating tapes</option>
+														<option class="dropdown-item_title">Aluminium tapes</option>
+														<option class="dropdown-item_title">Sealing tapes</option>
+														<option>Butyl tapes</option>
+														<option>Single sided sealing tape</option>
+														<option class="dropdown-item_title">PTFE tape</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-6 d-md-none px-2">
+												<button class="btn-primary btn-lg btn-block" type="button">Apply</button>
+											</div>
+											<div class="col-6 d-md-none px-2">
+												<button class="btn-outline-primary btn-lg btn-block" type="button" data-dismiss="modal" aria-label="Close">Cancel</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row mb-4 d-md-none">
+					<div class="col"><a class="product-list__open-filter d-flex align-item" href="#modalFilters" data-toggle="modal" data-target="#modalFilters">
+							<svg class="product-list__open-filter-icon mr-2">
+								<use xlink:href="images/sprites.svg#filter"></use>
+							</svg><span>Filters and search</span></a></div>
+					<div class="col text-right">
+						<div class="d-flex align-items-center justify-content-end">Page:
+							<ul class="product-list__pages-count pl-2">
+								<li class="product-list__pages-count__item"><span class="product-list__pages-count__item-text">1</span></li>
+								<li class="product-list__pages-count__item"><a class="product-list__pages-count__item-text" href="#">2</a></li>
+							</ul>
+						</div>
+						<div class="custom-control custom-checkbox custom-control_single d-inline-block">
+							<input class="custom-control-input" id="my-input-all" type="checkbox">
+							<label class="custom-control-label" for="my-input-all"><span class="d-inline-block pl-3 text-nowrap">Select all (23)</span></label>
+						</div>
+					</div>
+				</div>
+				<!-- Table product-list-->
+				<table class="table table-striped table-list w-100 mt-1 mb-4">
+					<thead class="table-list__header">
+						<tr class="table-list__row-header">
+							<th scope="col">
+								<div class="custom-control custom-checkbox custom-control_single d-inline-block">
+									<input class="custom-control-input" id="my-input" type="checkbox">
+									<label class="custom-control-label" for="my-input"></label>
+								</div>
+							</th>
+							<th scope="col"><span class="table-list__title">Image</span></th>
+							<th scope="col"><span class="table-list__title">Tape</span></th>
+							<th scope="col">
+								<div class="form-group"></div>
+								<select class="table__filter" title="Carrier" data-live-search="true" data-live-search-placeholder="Search" data-width="100%" multiple>
+									<option>Glass retention</option>
+								</select>
+							</th>
+							<th scope="col"><span class="table-list__title">Color</span></th>
+							<th scope="col"><span class="table-list__title">Thickness</span></th>
+							<th scope="col"><span class="table-list__title">Mesh</span></th>
+							<th></th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody class="table-list__body">
+						<tr class="table-list__row align-items-center">
+							<td class="table-list__item table-list__item_checkbox">
+								<div class="custom-control custom-checkbox custom-control_single d-inline-block">
+									<input class="custom-control-input" id="my-input-2" type="checkbox">
+									<label class="custom-control-label" for="my-input-2"><span class="d-md-none d-block pl-3">17200 - Double-sided PVC tape</span></label>
+								</div>
+							</td>
+							<td class="table-list__item table-list__item_image">
+								<figure class="figure m-0"><img class="figure-img img-fluid" src="images/prod-list.png" alt=""></figure>
+							</td>
+							<td class="table-list__item table-list__item_text_mobile pl-3 col-7 d-md-none">
+								<p>Carrier: PVC film</p>
+								<p>Color: Brown</p>
+								<p>Thickness: 0.24 mm</p>
+								<p>Mesh: 10</p>
+							</td>
+							<td class="table-list__item table-list__item_tape">17200 - Double-sided PVC tape</td>
+							<td class="table-list__item table-list__item_text">PVC film</td>
+							<td class="table-list__item table-list__item_text">Brown</td>
+							<td class="table-list__item table-list__item_text">0.24 mm</td>
+							<td class="table-list__item table-list__item_text">10</td>
+							<td class="table-list__item table-list__item_link"><a href="#">Request a datasheet</a></td>
+							<td class="table-list__item table-list__item_link"><a href="#">Request a datasheet</a></td>
+						</tr>
+						<tr class="table-list__row align-items-center">
+							<td class="table-list__item table-list__item_checkbox">
+								<div class="custom-control custom-checkbox custom-control_single d-inline-block">
+									<input class="custom-control-input" id="my-input-1" type="checkbox">
+									<label class="custom-control-label" for="my-input-1"><span class="d-md-none d-block pl-3">17200 - Double-sided PVC tape</span></label>
+								</div>
+							</td>
+							<td class="table-list__item table-list__item_image">
+								<figure class="figure m-0"><img class="figure-img img-fluid" src="images/prod-list.png" alt=""></figure>
+							</td>
+							<td class="table-list__item table-list__item_text_mobile pl-3 col-7 d-md-none">
+								<p>Carrier: PVC film</p>
+								<p>Color: Brown</p>
+								<p>Thickness: 0.24 mm</p>
+								<p>Mesh: 10</p>
+							</td>
+							<td class="table-list__item table-list__item_tape">17200 - Double-sided PVC tape</td>
+							<td class="table-list__item table-list__item_text">PVC film</td>
+							<td class="table-list__item table-list__item_text">Brown</td>
+							<td class="table-list__item table-list__item_text">0.24 mm</td>
+							<td class="table-list__item table-list__item_text">10</td>
+							<td class="table-list__item table-list__item_link"><a href="#">Request a datasheet</a></td>
+							<td class="table-list__item table-list__item_link"><a href="#">Request a datasheet</a></td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="row align-items-md-center mx-n2 pt-2 pb-4 mb-3">
+					<div class="col-12 text-right d-md-none mb-3">
+						<div class="d-flex align-items-center justify-content-end">Page:
+							<ul class="product-list__pages-count pl-2">
+								<li class="product-list__pages-count__item"><span class="product-list__pages-count__item-text">1</span></li>
+								<li class="product-list__pages-count__item"><a class="product-list__pages-count__item-text" href="#">2</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-auto px-2 mb-3 mb-md-0 product-list__text order-last order-last order-lg-0">For selected items (2):</div>
+					<div class="col-lg-auto col-md col px-2 order-last order-last order-lg-0 d-flex">
+						<button class="btn btn-primary btn-lg btn-block" type="button">Request a datasheet</button>
+					</div>
+					<div class="col-lg-auto col-md col px-2 order-last order-last order-lg-0 d-flex">
+						<button class="btn btn-primary btn-lg btn-block" type="button">Request a sample</button>
+					</div>
+					<div class="w-100 d-lg-none order-0"></div>
+					<div class="col-auto px-2 ml-auto mb-4 mb-lg-0 d-flex text-nowrap align-items-center order-first order-lg-0">
+						<div class="pr-4 product-list__text">Show on page:</div>
+						<select class="custom-select form-control form-control_icon form-control-lg">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option selected>10</option>
+						</select>
+					</div>
+				</div>
+				<!-- pagination to nav--><nav aria-label="Page navigation example">
+<ul class="pagination justify-content-center">
+<li class="page-item disabled">
+<a class="page-link" href="#" aria-label="Previous">
+<span aria-hidden="true">
+				<svg class="page-link__icon">
+					<use xlink:href="images/sprites.svg#chevron-left"></use>
+				</svg></span>
+</a>
+</li>
+<li class="page-item active"><a class="page-link" href="#">1</a></li>
+<li class="page-item"><a class="page-link" href="#">2</a></li>
+<li class="page-item"><a class="page-link" href="#">3</a></li>
+<li class="page-item"><a class="page-link" href="#">4</a></li>
+<li class="page-item"><a class="page-link" href="#">5</a></li>
+<li class="page-item"><a class="page-link page-link_more" href="#">. . .</a></li>
+<li class="page-item"><a class="page-link" href="#">10</a></li>
+<li class="page-item">
+<a class="page-link" href="#" aria-label="Next">
+<span aria-hidden="true">
+				<svg class="page-link__icon">
+					<use xlink:href="images/sprites.svg#chevron-right"></use>
+				</svg></span>
+</a>
+</li>
+</ul>
+</nav>
+			</div>
+		</div>
+		<script src="js/vendor.js?v=1593178701010"></script>
+		<script src="js/main.js?v=1593178701010"></script>
+	</body>
+</html>

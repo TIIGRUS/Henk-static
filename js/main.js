@@ -164,10 +164,20 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vendor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vendor */ "./src/js/vendor.js");
+ // Select
 
 $('.selectpicker').selectpicker({
   style: 'form-control form-control_icon',
   styleBase: ''
+});
+$('.table__filter').selectpicker({
+  style: 'table-list__title',
+  styleBase: ''
+}); // Moadla filte callbacks
+
+$('#modalFilters').on('show.bs.modal', function (e) {
+  var bodyElement = document.querySelector('body');
+  bodyElement.classList.add('modal-open-filter');
 }); // Example starter JavaScript for disabling form submissions if there are invalid fields
 
 (function () {
