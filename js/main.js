@@ -169,6 +169,14 @@ __webpack_require__.r(__webpack_exports__);
 $('.selectpicker').selectpicker({
   style: 'form-control form-control_icon',
   styleBase: ''
+}); // methods is anythins is selected in selectpicker
+
+$('.selectpicker').on('changed.bs.select', function (e, clickedIndex, isSelected, previousValue) {
+  if (isSelected) {
+    this.nextSibling.classList.add('is-selected');
+  } else {
+    this.nextSibling.classList.remove('is-selected');
+  }
 }); // Modal filter call and add class to body
 
 $('#modalFilters').on('show.bs.modal', function (e) {

@@ -7919,6 +7919,8 @@ html {
     .table-list__header .dropdown-menu .dropdown-item {
       padding: 0 12px;
       white-space: nowrap; }
+  .table-list__header .bootstrap-select:not(.show) .is-selected.form-control_icon {
+    background-image: url(../images/sprites/svg/filter-solid.svg); }
 
 .table-list th, .table-list__item {
   text-align: center;
