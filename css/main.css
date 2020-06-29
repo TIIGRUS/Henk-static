@@ -7007,9 +7007,9 @@ a.close.disabled {
   .page-link:focus {
     z-index: 3;
     outline: 0;
-    -webkit-box-shadow: 0 0 0 0.2rem rgba(14, 49, 84, 0.25);
-       -moz-box-shadow: 0 0 0 0.2rem rgba(14, 49, 84, 0.25);
-            box-shadow: 0 0 0 0.2rem rgba(14, 49, 84, 0.25); }
+    -webkit-box-shadow: 0 0 5px 0.1rem rgba(14, 49, 84, 0.25);
+       -moz-box-shadow: 0 0 5px 0.1rem rgba(14, 49, 84, 0.25);
+            box-shadow: 0 0 5px 0.1rem rgba(14, 49, 84, 0.25); }
 
 .page-item:first-child .page-link {
   margin-left: 0;
