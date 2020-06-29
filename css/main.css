@@ -7770,6 +7770,9 @@ html {
 .bootstrap-select.form-control_lg .form-control {
   font-size: 1.125rem; }
 
+.bootstrap-select.form-control_lg .bs-searchbox .form-control {
+  height: 40px; }
+
 .bootstrap-select .popover-header {
   padding: 5px 10px 0; }
 
@@ -7782,6 +7785,19 @@ html {
 
 .was-validated .invalid-feedback {
   display: block; }
+
+.was-validated .bootstrap-select .bs-searchbox .form-control:valid {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  border-color: #2A2A2A;
+  background: none;
+  padding-right: 0.75rem; }
+  .was-validated .bootstrap-select .bs-searchbox .form-control:valid:focus, .was-validated .bootstrap-select.form-control_lg .bs-searchbox .dropdown-toggle:valid:focus, .was-validated .bootstrap-select.show .bs-searchbox .form-control:valid,
+  .was-validated .bootstrap-select.show.form-control_lg .bs-searchbox .dropdown-toggle:valid {
+    -webkit-box-shadow: 0 0 5px 0.1rem rgba(14, 49, 84, 0.25);
+       -moz-box-shadow: 0 0 5px 0.1rem rgba(14, 49, 84, 0.25);
+            box-shadow: 0 0 5px 0.1rem rgba(14, 49, 84, 0.25); }
 
 .modal .close {
   position: absolute;
