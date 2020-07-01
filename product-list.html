@@ -10,7 +10,7 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:title" content="Product list table">
 		<title>Product list table</title>
-		<link rel="stylesheet" href="css/main.css?v=1593439847520">
+		<link rel="stylesheet" href="css/main.css?v=1593612428750">
 	</head>
 	<body>
 		<div class="container">
@@ -32,10 +32,10 @@
 										</div>
 										<div class="col-md-auto d-md-block d-none px-2 product-list__text">For selected items (2):</div>
 										<div class="col-lg-auto col-md d-md-block d-none px-2">
-											<button class="btn btn-primary btn-lg btn-block" type="button">Request a datasheet</button>
+											<button class="btn btn-primary btn-lg btn-block" type="button" data-toggle="modal" data-target="#technicalDatasheets">Request a datasheet</button>
 										</div>
 										<div class="col-lg-auto col-md d-md-block d-none px-2">
-											<button class="btn btn-primary btn-lg btn-block" type="button">Request a sample</button>
+											<button class="btn btn-primary btn-lg btn-block" type="button" data-toggle="modal" data-target="#privateDatasheets">Request a sample</button>
 										</div>
 									</div>
 									<div class="product-list__filter">
@@ -452,8 +452,8 @@
 							<td class="table-list__item table-list__item_text">Brown</td>
 							<td class="table-list__item table-list__item_text">0.24 mm</td>
 							<td class="table-list__item table-list__item_text">10</td>
-							<td class="table-list__item table-list__item_link"><a href="#">Request a datasheet</a></td>
-							<td class="table-list__item table-list__item_link"><a href="#">Request a datasheet</a></td>
+							<td class="table-list__item table-list__item_link"><a href="#technicalDatasheets" data-toggle="modal" data-target="#technicalDatasheets">Request a datasheet</a></td>
+							<td class="table-list__item table-list__item_link"><a href="#privateDatasheets" data-toggle="modal" data-target="#privateDatasheets">Request a sample</a></td>
 						</tr>
 						<tr class="table-list__row align-items-center">
 							<td class="table-list__item table-list__item_checkbox">
@@ -476,8 +476,8 @@
 							<td class="table-list__item table-list__item_text">Brown</td>
 							<td class="table-list__item table-list__item_text">0.24 mm</td>
 							<td class="table-list__item table-list__item_text">10</td>
-							<td class="table-list__item table-list__item_link"><a href="#">Request a datasheet</a></td>
-							<td class="table-list__item table-list__item_link"><a href="#">Request a datasheet</a></td>
+							<td class="table-list__item table-list__item_link"><a href="#technicalDatasheets" data-toggle="modal" data-target="#technicalDatasheets">Request a datasheet</a></td>
+							<td class="table-list__item table-list__item_link"><a href="#privateDatasheets" data-toggle="modal" data-target="#privateDatasheets">Request a datasheet</a></td>
 						</tr>
 					</tbody>
 				</table>
@@ -492,10 +492,10 @@
 					</div>
 					<div class="col-md-auto px-2 mb-3 mb-md-0 product-list__text order-last order-last order-lg-0">For selected items (2):</div>
 					<div class="col-lg-auto col-md col px-2 order-last order-last order-lg-0 d-flex">
-						<button class="btn btn-primary btn-lg btn-block" type="button">Request a datasheet</button>
+						<button class="btn btn-primary btn-lg btn-block" type="button" data-toggle="modal" data-target="#technicalDatasheets">Request a datasheet</button>
 					</div>
 					<div class="col-lg-auto col-md col px-2 order-last order-last order-lg-0 d-flex">
-						<button class="btn btn-primary btn-lg btn-block" type="button">Request a sample</button>
+						<button class="btn btn-primary btn-lg btn-block" type="button" data-toggle="modal" data-target="#privateDatasheets">Request a sample</button>
 					</div>
 					<div class="w-100 d-lg-none order-0"></div>
 					<div class="col-auto px-2 ml-auto mb-4 mb-lg-0 d-md-flex text-nowrap align-items-center order-first order-lg-0 d-none">
@@ -530,7 +530,100 @@
 				</nav>
 			</div>
 		</div>
-		<script src="js/vendor.js?v=1593439847520"></script>
-		<script src="js/main.js?v=1593439847520"></script>
+		<div class="modal fade modal_request" tabindex="-1" role="dialog" aria-labelledby="request-label" aria-hidden="true" id="technicalDatasheets">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header border-0 px-4">
+						<h2 class="modal-title" id="my-modal-title">Request technical datasheets</h2>
+						<button class="close close_place_top" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="modal-body border-0 px-4">
+						<div class="row mx-n5 row-cols-lg-2 row-cols-1">
+							<div class="col border-right px-5">
+								<form action="#">
+									<div class="form-group">
+										<input class="form-control form-control_lg_default" type="Text" id="product-number" placeholder="Your name" required>
+									</div>
+									<div class="form-group">
+										<input class="form-control form-control_lg_default" type="Text" id="product-number" placeholder="Company name" required>
+									</div>
+									<div class="form-group">
+										<input class="form-control form-control_lg_default" type="email" id="product-number" placeholder="Email" required>
+									</div>
+									<div class="form-group">
+										<input class="form-control form-control_lg_default" type="number" id="product-number" placeholder="Telephone number" required>
+									</div>
+									<div class="form-group">
+										<button class="btn btn-primary btn-lg" type="button">Get the datasheets</button>
+									</div>
+								</form>
+							</div>
+							<div class="col px-5 order-first order-lg-last mb-4 mb-lg-0">
+								<h4 class="h4 font-weight-bold mb-4">Chosen products:</h4>
+								<ol class="modal__request-list">
+									<li class="modal__list-item">
+										<button class="close close_place_static order-first" type="button"><span aria-hidden="true">&times;</span></button>17200 Double Sided PVC Tape
+									</li>
+									<li class="modal__list-item">
+										<button class="close close_place_static order-first" type="button"><span aria-hidden="true">&times;</span></button>17300 Removable Exhibition Tape
+									</li>
+									<li class="modal__list-item">
+										<button class="close close_place_static order-first" type="button"><span aria-hidden="true">&times;</span></button>17200 Double Sided PVC Tape
+									</li>
+									<li class="modal__list-item">
+										<button class="close close_place_static order-first" type="button"><span aria-hidden="true">&times;</span></button>17200 Double Sided PVC Tape
+									</li>
+									<li class="modal__list-item">
+										<button class="close close_place_static order-first" type="button"><span aria-hidden="true">&times;</span></button>17200 Double Sided PVC Tape
+									</li>
+								</ol>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade modal_request" tabindex="-1" role="dialog" aria-labelledby="request-label" aria-hidden="true" id="privateDatasheets">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header border-0 px-4">
+						<h2 class="modal-title" id="my-modal-title">Private Label Product Request</h2>
+						<button class="close close_place_top" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					</div>
+					<div class="modal-body border-0 px-4">
+						<div class="row mx-n5 row-cols-lg-2 row-cols-1">
+							<div class="col border-right px-5">
+								<form action="#">
+									<div class="form-group">
+										<input class="form-control form-control_lg_default" type="Text" id="product-number" placeholder="Your name" required>
+									</div>
+									<div class="form-group">
+										<input class="form-control form-control_lg_default" type="Text" id="product-number" placeholder="Company name" required>
+									</div>
+									<div class="form-group">
+										<input class="form-control form-control_lg_default" type="email" id="product-number" placeholder="Email" required>
+									</div>
+									<div class="form-group">
+										<input class="form-control form-control_lg_default" type="number" id="product-number" placeholder="Telephone number" required>
+									</div>
+								</form>
+							</div>
+							<div class="col px-5">
+								<form action="#">
+									<div class="form-group">
+										<textarea class="form-control form-control_lg_default" rows="5" placeholder="Please describe your need"></textarea>
+									</div>
+									<div class="form-group text-center">
+										<button class="btn btn-primary btn-lg">Send the request</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/vendor.js?v=1593612428751"></script>
+		<script src="js/main.js?v=1593612428751"></script>
 	</body>
 </html>
