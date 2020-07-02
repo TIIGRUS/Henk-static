@@ -7884,7 +7884,7 @@ html {
   margin: 0;
   counter-reset: request-list;
   list-style: none;
-  height: 240px;
+  height: 226px;
   overflow-y: scroll; }
 
 .modal__list-item {
@@ -7896,7 +7896,7 @@ html {
           align-items: flex-start;
   font-weight: 500; }
   .modal__list-item:not(:last-child) {
-    padding: 0 0 3px; }
+    padding: 0 0 1px; }
     @media (max-width: 767.98px) {
       .modal__list-item:not(:last-child) {
         padding: 0 0 7px; } }
@@ -7935,6 +7935,9 @@ html {
 @media (max-width: 575.98px) {
   .modal .modal-dialog {
     margin-top: 65px; } }
+
+.modal .btn.btn-block {
+  margin: 0 0 1rem; }
 
 .custom-control_single {
   padding-left: 1.4rem; }
