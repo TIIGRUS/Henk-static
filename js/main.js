@@ -182,6 +182,10 @@ $('.selectpicker').on('changed.bs.select', function (e, clickedIndex, isSelected
 $('#modalFilters').on('show.bs.modal', function (e) {
   var bodyElement = document.querySelector('body');
   bodyElement.classList.add('modal-open-filter');
+});
+$('#modalFilters').on('hidden.bs.modal', function (e) {
+  var bodyElement = document.querySelector('body');
+  bodyElement.classList.remove('modal-open-filter');
 }); // checkbox all
 
 $("#select-all").click(function () {

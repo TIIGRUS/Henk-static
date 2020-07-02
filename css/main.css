@@ -7628,7 +7628,8 @@ html {
           background-size: 25px; }
 
 .form-control.is-invalid:focus, .bootstrap-select.form-control_lg .is-invalid.dropdown-toggle:focus, .bootstrap-select.form-control_lg .dropdown-toggle.bs-invalid:focus, .bootstrap-select.show .is-invalid.form-control, .bootstrap-select.show .form-control.bs-invalid,
-.bootstrap-select.show.form-control_lg .is-invalid.dropdown-toggle, .bootstrap-select.show.form-control_lg .dropdown-toggle.bs-invalid, .bootstrap-select .form-control.bs-invalid:focus {
+.bootstrap-select.show.form-control_lg .is-invalid.dropdown-toggle, .bootstrap-select.show.form-control_lg .dropdown-toggle.bs-invalid, .bootstrap-select .form-control.bs-invalid:focus, .form-control:invalid:focus, .bootstrap-select.form-control_lg .dropdown-toggle:invalid:focus, .bootstrap-select.show .form-control:invalid,
+.bootstrap-select.show.form-control_lg .dropdown-toggle:invalid {
   -webkit-box-shadow: 0 0 5px 0.1rem rgba(220, 53, 69, 0.25);
      -moz-box-shadow: 0 0 5px 0.1rem rgba(220, 53, 69, 0.25);
           box-shadow: 0 0 5px 0.1rem rgba(220, 53, 69, 0.25); }
@@ -7780,6 +7781,9 @@ html {
 .bootstrap-select .popover-header {
   padding: 5px 10px 0; }
 
+.bootstrap-select .no-results {
+  white-space: normal; }
+
 .see-more {
   -webkit-text-decoration-line: underline;
      -moz-text-decoration-line: underline;
@@ -7790,7 +7794,7 @@ html {
 .was-validated .invalid-feedback {
   display: block; }
 
-.was-validated .bootstrap-select .bs-searchbox .form-control:valid {
+.was-validated .bootstrap-select .bs-searchbox .form-control:valid, .was-validated .bootstrap-select .bs-searchbox .form-control.is-valid {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
      -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -7798,13 +7802,39 @@ html {
   background: none;
   padding-right: 0.75rem; }
   .was-validated .bootstrap-select .bs-searchbox .form-control:valid:focus, .was-validated .bootstrap-select.form-control_lg .bs-searchbox .dropdown-toggle:valid:focus, .was-validated .bootstrap-select.show .bs-searchbox .form-control:valid,
-  .was-validated .bootstrap-select.show.form-control_lg .bs-searchbox .dropdown-toggle:valid {
+  .was-validated .bootstrap-select.show.form-control_lg .bs-searchbox .dropdown-toggle:valid, .was-validated .bootstrap-select .bs-searchbox .form-control.is-valid:focus, .was-validated .bootstrap-select.form-control_lg .bs-searchbox .is-valid.dropdown-toggle:focus, .was-validated .bootstrap-select.show .bs-searchbox .is-valid.form-control,
+  .was-validated .bootstrap-select.show.form-control_lg .bs-searchbox .is-valid.dropdown-toggle {
     -webkit-box-shadow: 0 0 5px 0.1rem rgba(14, 49, 84, 0.25);
        -moz-box-shadow: 0 0 5px 0.1rem rgba(14, 49, 84, 0.25);
             box-shadow: 0 0 5px 0.1rem rgba(14, 49, 84, 0.25); }
 
 .was-validated .bootstrap-select select:valid + .dropdown-toggle {
   border-color: #2A2A2A; }
+
+.was-validated .form-control:valid, .was-validated .form-control.is-valid, .was-validated .form-control:valid:focus, .was-validated .bootstrap-select.form-control_lg .dropdown-toggle:valid:focus, .bootstrap-select.form-control_lg .was-validated .dropdown-toggle:valid:focus, .was-validated .bootstrap-select.show .form-control:valid, .bootstrap-select.show .was-validated .form-control:valid,
+.was-validated .bootstrap-select.show.form-control_lg .dropdown-toggle:valid, .bootstrap-select.show.form-control_lg .was-validated .dropdown-toggle:valid, .was-validated .form-control.is-valid:focus, .was-validated .bootstrap-select.form-control_lg .is-valid.dropdown-toggle:focus, .bootstrap-select.form-control_lg .was-validated .is-valid.dropdown-toggle:focus, .was-validated .bootstrap-select.show .is-valid.form-control, .bootstrap-select.show .was-validated .is-valid.form-control,
+.was-validated .bootstrap-select.show.form-control_lg .is-valid.dropdown-toggle, .bootstrap-select.show.form-control_lg .was-validated .is-valid.dropdown-toggle, .was-validated .form-control:invalid, .was-validated .form-control.is-invalid, .was-validated .bootstrap-select .form-control.bs-invalid, .bootstrap-select .was-validated .form-control.bs-invalid {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .was-validated .form-control:valid:focus, .was-validated .bootstrap-select.form-control_lg .dropdown-toggle:valid:focus, .bootstrap-select.form-control_lg .was-validated .dropdown-toggle:valid:focus, .was-validated .bootstrap-select.show .form-control:valid, .bootstrap-select.show .was-validated .form-control:valid,
+  .was-validated .bootstrap-select.show.form-control_lg .dropdown-toggle:valid, .bootstrap-select.show.form-control_lg .was-validated .dropdown-toggle:valid, .was-validated .form-control.is-valid:focus, .was-validated .bootstrap-select.form-control_lg .is-valid.dropdown-toggle:focus, .bootstrap-select.form-control_lg .was-validated .is-valid.dropdown-toggle:focus, .was-validated .bootstrap-select.show .is-valid.form-control, .bootstrap-select.show .was-validated .is-valid.form-control,
+  .was-validated .bootstrap-select.show.form-control_lg .is-valid.dropdown-toggle, .bootstrap-select.show.form-control_lg .was-validated .is-valid.dropdown-toggle, .was-validated .form-control:valid:focus:focus, .was-validated .bootstrap-select.form-control_lg .dropdown-toggle:valid:focus, .bootstrap-select.form-control_lg .was-validated .dropdown-toggle:valid:focus, .was-validated .bootstrap-select.show .form-control:valid, .bootstrap-select.show .was-validated .form-control:valid,
+  .was-validated .bootstrap-select.show.form-control_lg .dropdown-toggle:valid, .bootstrap-select.show.form-control_lg .was-validated .dropdown-toggle:valid, .was-validated .form-control.is-valid:focus:focus, .was-validated .bootstrap-select.form-control_lg .is-valid.dropdown-toggle:focus, .bootstrap-select.form-control_lg .was-validated .is-valid.dropdown-toggle:focus, .was-validated .bootstrap-select.show .is-valid.form-control, .bootstrap-select.show .was-validated .is-valid.form-control,
+  .was-validated .bootstrap-select.show.form-control_lg .is-valid.dropdown-toggle, .bootstrap-select.show.form-control_lg .was-validated .is-valid.dropdown-toggle, .was-validated .form-control:invalid:focus, .was-validated .bootstrap-select.form-control_lg .dropdown-toggle:invalid:focus, .bootstrap-select.form-control_lg .was-validated .dropdown-toggle:invalid:focus, .was-validated .bootstrap-select.show .form-control:invalid, .bootstrap-select.show .was-validated .form-control:invalid,
+  .was-validated .bootstrap-select.show.form-control_lg .dropdown-toggle:invalid, .bootstrap-select.show.form-control_lg .was-validated .dropdown-toggle:invalid, .was-validated .form-control.is-invalid:focus, .was-validated .bootstrap-select.form-control_lg .is-invalid.dropdown-toggle:focus, .bootstrap-select.form-control_lg .was-validated .is-invalid.dropdown-toggle:focus, .was-validated .bootstrap-select.form-control_lg .dropdown-toggle.bs-invalid:focus, .bootstrap-select.form-control_lg .was-validated .dropdown-toggle.bs-invalid:focus, .was-validated .bootstrap-select.show .is-invalid.form-control, .bootstrap-select.show .was-validated .is-invalid.form-control, .was-validated .bootstrap-select.show .form-control.bs-invalid, .bootstrap-select.show .was-validated .form-control.bs-invalid,
+  .was-validated .bootstrap-select.show.form-control_lg .is-invalid.dropdown-toggle, .bootstrap-select.show.form-control_lg .was-validated .is-invalid.dropdown-toggle, .was-validated .bootstrap-select.show.form-control_lg .dropdown-toggle.bs-invalid, .bootstrap-select.show.form-control_lg .was-validated .dropdown-toggle.bs-invalid, .was-validated .bootstrap-select .form-control.bs-invalid:focus, .bootstrap-select .was-validated .form-control.bs-invalid:focus {
+    -webkit-box-shadow: 0 0 5px 0.1rem rgba(14, 49, 84, 0.25);
+       -moz-box-shadow: 0 0 5px 0.1rem rgba(14, 49, 84, 0.25);
+            box-shadow: 0 0 5px 0.1rem rgba(14, 49, 84, 0.25); }
+
+.was-validated .form-control:valid, .was-validated .form-control.is-valid {
+  border-color: #2A2A2A;
+  background-image: inherit; }
+  .was-validated .form-control:valid:focus, .was-validated .bootstrap-select.form-control_lg .dropdown-toggle:valid:focus, .bootstrap-select.form-control_lg .was-validated .dropdown-toggle:valid:focus, .was-validated .bootstrap-select.show .form-control:valid, .bootstrap-select.show .was-validated .form-control:valid,
+  .was-validated .bootstrap-select.show.form-control_lg .dropdown-toggle:valid, .bootstrap-select.show.form-control_lg .was-validated .dropdown-toggle:valid, .was-validated .form-control.is-valid:focus, .was-validated .bootstrap-select.form-control_lg .is-valid.dropdown-toggle:focus, .bootstrap-select.form-control_lg .was-validated .is-valid.dropdown-toggle:focus, .was-validated .bootstrap-select.show .is-valid.form-control, .bootstrap-select.show .was-validated .is-valid.form-control,
+  .was-validated .bootstrap-select.show.form-control_lg .is-valid.dropdown-toggle, .bootstrap-select.show.form-control_lg .was-validated .is-valid.dropdown-toggle {
+    border-color: #2A2A2A; }
 
 .modal .close {
   position: absolute;
@@ -7853,7 +7883,9 @@ html {
   padding: 0;
   margin: 0;
   counter-reset: request-list;
-  list-style: none; }
+  list-style: none;
+  height: 240px;
+  overflow-y: scroll; }
 
 .modal__list-item {
   font-size: 1rem;
@@ -7899,6 +7931,10 @@ html {
     max-width: 100%; }
   .modal_reset_border_lg {
     border: none; } }
+
+@media (max-width: 575.98px) {
+  .modal .modal-dialog {
+    margin-top: 65px; } }
 
 .custom-control_single {
   padding-left: 1.4rem; }
@@ -8126,7 +8162,8 @@ html {
   text-decoration: none; }
 
 .pagination .page-item.active .page-link {
-  text-decoration: none; }
+  text-decoration: none;
+  z-index: 0; }
 
 .pagination .page-item.disabled .page-link__icon {
   fill: currentColor; }
