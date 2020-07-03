@@ -7884,7 +7884,7 @@ html {
   margin: 0;
   counter-reset: request-list;
   list-style: none;
-  height: 226px;
+  height: 235px;
   overflow-y: scroll; }
 
 .modal__list-item {
@@ -7896,7 +7896,7 @@ html {
           align-items: flex-start;
   font-weight: 500; }
   .modal__list-item:not(:last-child) {
-    padding: 0 0 1px; }
+    padding: 0 0 2px; }
     @media (max-width: 767.98px) {
       .modal__list-item:not(:last-child) {
         padding: 0 0 7px; } }
@@ -7908,6 +7908,12 @@ html {
   .modal__list-item .close {
     font-size: 2.5rem;
     line-height: 23px; }
+
+.modal_reset_border_lg {
+  border: none; }
+
+.modal textarea.form-control {
+  height: 156px; }
 
 @media (min-width: 768px) {
   .modal_is-visible-lg {
@@ -7928,9 +7934,7 @@ html {
            -o-transform: none;
               transform: none; }
   .modal-dialog_width_full_lg {
-    max-width: 100%; }
-  .modal_reset_border_lg {
-    border: none; } }
+    max-width: 100%; } }
 
 @media (max-width: 575.98px) {
   .modal .modal-dialog {
