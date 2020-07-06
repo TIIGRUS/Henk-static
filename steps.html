@@ -10,16 +10,31 @@
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:title" content="Steps base structure">
 		<title>Steps base structure</title>
-		<link rel="stylesheet" href="css/main.css?v=1593777890543">
+		<link rel="stylesheet" href="css/main.css?v=1594044080633">
 	</head>
 	<body>
-		<div class="container"><ul class="progress-steps">
-			<li><a href="#"><span>1</span></a></li>
-			<li><a href="#"><span>2</span></a></li>
-			<li><a href="#"><span>3</span></a></li>
-			<li><a href="#"><span>4</span></a></li>
+		<div class="container py-5">
+			<ol class="steps" id="accordionSteps">
+				<li class="steps__item steps__item_toggle"><a class="steps__item__link" href="#collapseRightProduct" data-toggle="collapse" data-target="#collapseRightProduct" aria-expanded="true" aria-controls="collapseRightProduct"><span class="steps__item__counter">1</span><span class="steps__item__text">Right PRODUCT</span></a></li>
+				<li class="steps__item steps__item_toggle"><a class="steps__item__link collapsed" href="#collapseCore" data-toggle="collapse" data-target="#collapseCore" aria-expanded="false" aria-controls="collapseCore"><span class="steps__item__counter">2</span><span class="steps__item__text">Core</span></a></li>
+				<li class="steps__item steps__item_toggle"><a class="steps__item__link collapsed" href="#collapsePackaging" data-toggle="collapse" data-target="#collapsePackaging" aria-expanded="false" aria-controls="collapsePackaging"><span class="steps__item__counter">3</span><span class="steps__item__text">PACKAGING</span></a></li>
+				<li class="steps__item steps__item_toggle"><a class="steps__item__link collapsed" href="#collapseDelivery" data-toggle="collapse" data-target="#collapseDelivery" aria-expanded="false" aria-controls="collapseDelivery"><span class="steps__item__counter">4</span><span class="steps__item__text">DELIVERY</span></a></li>
+				<li class="steps__item steps__item_content order-last collapse show" id="collapseRightProduct" aria-labelledby="headingOne" data-parent="#accordionSteps">
+					<article class="steps__item__article mx-n3 mx-md-0"><div class="row">
+						<div class="col-md col-12">
+							<h5>We give advice about the right product for the right application</h5>
+							<p>Our in-house specialists are able to select the tapes that best suits your needs thanks to their long experience.</p>
+							<p>Our wide and complete range of tapes enables us to find the best solution for most applications.</p>
+						</div>
+						<div class="col-md col-12 text-center text-md-right order-first order-md-last mb-4 mb-md-0"><img src="images/steps-img-1.jpg" alt="Steps product"></div></div>
+					</article>
+					<div class="text-center pt-1 mt-3 d-none d-md-block">
+						<button class="btn btn-primary">Let's start</button>
+					</div>
+				</li>
+			</ol>
 		</div>
-		<script src="js/vendor.js?v=1593777890543"></script>
-		<script src="js/main.js?v=1593777890543"></script>
+		<script src="js/vendor.js?v=1594044080633"></script>
+		<script src="js/main.js?v=1594044080633"></script>
 	</body>
 </html>
