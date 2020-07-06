@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<symbol id="arrow-down" viewBox="0 0 368 368">
+	<path d="M319.215 196.536a8.01 8.01 0 00-7.216-4.536h-72V16c0-8.824-7.176-16-16-16h-80c-8.824 0-16 7.176-16 16v176h-72a7.99 7.99 0 00-7.208 4.536 7.981 7.981 0 00.968 8.464l127.992 160a8.005 8.005 0 0012.496 0l128-160a8.012 8.012 0 00.968-8.464zM183.999 347.192L72.647 208h63.352c4.416 0 8-3.584 8-8V16l80-.008V200c0 4.416 3.584 8 8 8h63.352L183.999 347.192z"/>
+</symbol>
 <symbol id="chevron-left" viewBox="0 0 407.436 407.436">
 	<path d="M315.869 21.178L294.621 0 91.566 203.718l203.055 203.718 21.248-21.178-181.945-182.54z"/>
 </symbol>
