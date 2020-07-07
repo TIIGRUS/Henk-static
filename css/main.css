@@ -8352,7 +8352,9 @@ html {
       width: 70px;
       position: absolute;
       bottom: 100%;
-      left: 30px; }
+      left: -webkit-calc((135px / 2) - 70px / 2);
+      left: -moz-calc((135px / 2) - 70px / 2);
+      left: calc((135px / 2) - 70px / 2); }
     .steps__item_content {
       color: #0E3154; }
       .steps__item_content .btn {
