@@ -8351,7 +8351,8 @@ html {
       height: 70px;
       width: 70px;
       position: absolute;
-      bottom: 100%; }
+      bottom: 100%;
+      left: 30px; }
     .steps__item_content {
       color: #0E3154; }
       .steps__item_content .btn {
