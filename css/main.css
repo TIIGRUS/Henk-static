@@ -8373,6 +8373,9 @@ html {
           counter-increment: list-acc;
           content: counter(list-acc) ". ";
           font-weight: bold; }
+      @media (max-width: 767.98px) {
+        .steps__item_content h5 {
+          display: none; } }
     .steps__item__article {
       background: #C4C4C4;
       padding: 18px 15px;
