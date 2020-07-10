@@ -187,9 +187,18 @@ $('#modalFilters').on('hidden.bs.modal', function (e) {
   var bodyElement = document.querySelector('body');
   bodyElement.classList.remove('modal-open-filter');
 }); // checkbox all
+// $("#select-all").click(function () {
+// 	$('input:checkbox').not(this).prop('checked', this.checked);
+// });
 
-$("#select-all").click(function () {
-  $('input:checkbox').not(this).prop('checked', this.checked);
+$("#select-all").change(function () {
+  //"select all" change
+  var status = this.checked; // "select all" checked status
+
+  $('.custom-control-input').each(function () {
+    //iterate all listed checkbox items
+    this.checked = status; //change ".checkbox" checked status
+  });
 }); // scroll screen to content to toggle accordion
 
 $('.collapse').on('shown.bs.collapse', function (e) {
