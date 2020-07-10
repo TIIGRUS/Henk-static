@@ -210,6 +210,29 @@ $(function () {
   $(window).on("resize", function () {
     removeClassShowAcc();
   });
+}); // init slick carousel
+
+$('.slider-for').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav'
+});
+$('.slider-nav').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  asNavFor: '.slider-for',
+  dots: false,
+  focusOnSelect: true,
+  centerPadding: 0,
+  responsive: [{
+    breakpoint: 576.5,
+    settings: {
+      slidesToShow: 3,
+      centerMode: true
+    }
+  }]
 }); // Example starter JavaScript for disabling form submissions if there are invalid fields
 
 (function () {
@@ -253,6 +276,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_dist_js_bootstrap_bundle__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_js_bootstrap_bundle__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var bootstrap_select__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap-select */ "./node_modules/bootstrap-select/dist/js/bootstrap-select.js");
 /* harmony import */ var bootstrap_select__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap_select__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
+/* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
