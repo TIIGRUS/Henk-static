@@ -190,6 +190,26 @@ $('#modalFilters').on('hidden.bs.modal', function (e) {
 
 $("#select-all").click(function () {
   $('input:checkbox').not(this).prop('checked', this.checked);
+}); // scroll screen to content to toggle accordion
+
+$('.collapse').on('shown.bs.collapse', function (e) {
+  var $stepsElemntContent = $(this).closest('.steps__item_content');
+  $('html,body').animate({
+    scrollTop: $stepsElemntContent.offset().top
+  }, 500);
+});
+
+function removeClassShowAcc() {
+  var windowWidth = $(window).width();
+  if (windowWidth <= 767.5) $('.steps__item_content.show').addClass('steps__item_hide-mobile').removeClass('show');else $('.steps__item_content.steps__item_hide-mobile').addClass('show').removeClass('steps__item_hide-mobile');
+}
+
+;
+$(function () {
+  removeClassShowAcc();
+  $(window).on("resize", function () {
+    removeClassShowAcc();
+  });
 }); // Example starter JavaScript for disabling form submissions if there are invalid fields
 
 (function () {
