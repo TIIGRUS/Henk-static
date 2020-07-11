@@ -8955,22 +8955,20 @@ html {
 
 .slider-nav .slick-slide {
   padding: 0 3px;
-  opacity: 0.6;
   -webkit-transition: opacity .25s linear;
   -o-transition: opacity .25s linear;
   -moz-transition: opacity .25s linear;
   transition: opacity .25s linear;
   outline: none; }
-  .slider-nav .slick-slide:hover {
-    opacity: 1; }
 
 .slider-nav .slick-list {
   margin: 0 -3px; }
 
-.slider-nav .slick-current {
-  opacity: 1; }
-  .slider-nav .slick-current .slider__figure {
-    border-color: #0E3154; }
+.slider-nav .slick-current .slider__figure {
+  border-color: #0E3154; }
+
+.slider-nav .slick-current .slider__figure_thumbs {
+  border-color: #2A2A2A; }
 
 @media (min-width: 576px) and (max-width: 991.98px) {
   .slider-nav .slick-slide {
@@ -8978,8 +8976,29 @@ html {
   .slider-nav .slick-list {
     margin: 0 -6px; } }
 
+@media (max-width: 991.98px) {
+  .slider-nav .slick-track {
+    width: 100% !important;
+    -webkit-transform: none !important;
+       -moz-transform: none !important;
+        -ms-transform: none !important;
+         -o-transform: none !important;
+            transform: none !important;
+    height: auto !important; }
+    .slider-nav .slick-track > * {
+      -webkit-box-flex: 0;
+      -webkit-flex: 0 0 25%;
+         -moz-box-flex: 0;
+          -ms-flex: 0 0 25%;
+              flex: 0 0 25%;
+      max-width: 25%; }
+    .slider-nav .slick-track .slick-cloned {
+      display: none; }
+    .slider-nav .slick-track .slick-slide {
+      padding: 1px 3px; } }
+
 .slider-nav .slick-arrow {
-  z-index: 1;
+  z-index: 3;
   height: auto;
   width: auto; }
   .slider-nav .slick-arrow:before {
@@ -8998,9 +9017,28 @@ html {
     left: -5px; } }
 
 .slider__figure {
-  border: 2px solid #B3B3B3;
+  border: 2px solid #E6E6E6;
   margin: 0;
   position: relative; }
+  .slider__figure_thumbs {
+    position: relative; }
+    .slider__figure_thumbs:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      opacity: 0;
+      background: #0E3154;
+      mix-blend-mode: multiply;
+      -webkit-transition: opacity 0.25s linear;
+      -o-transition: opacity 0.25s linear;
+      -moz-transition: opacity 0.25s linear;
+      transition: opacity 0.25s linear;
+      z-index: 1; }
+    .slider__figure_thumbs:hover:before {
+      opacity: 0.6; }
 
 .slider__img_main {
   height: 260px;
@@ -9015,7 +9053,7 @@ html {
   padding: 5px;
   display: block;
   font-size: 1.125rem;
-  border: 2px solid #fff; }
+  border: 1px solid #fff; }
   @media (min-width: 992px) {
     .slider__img-caption {
       left: 0; } }

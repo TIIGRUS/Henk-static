@@ -236,11 +236,16 @@ $('.slider-nav').slick({
   focusOnSelect: true,
   centerPadding: 0,
   responsive: [{
-    breakpoint: 576.5,
+    breakpoint: 991.98,
     settings: {
-      slidesToShow: 3,
-      centerMode: true
-    }
+      arrows: false
+    } // settings: "unslick",
+    // breakpoint: 576.5,
+    // settings: {
+    // 	slidesToShow: 3,
+    // 	centerMode: true,
+    // },
+
   }]
 }); // Example starter JavaScript for disabling form submissions if there are invalid fields
 
