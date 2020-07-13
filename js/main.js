@@ -202,7 +202,7 @@ $("#select-all").change(function () {
 }); // scroll screen to content to toggle accordion
 
 $('.collapse').on('shown.bs.collapse', function (e) {
-  var $stepsElemntContent = $(this).closest('.steps__item_content');
+  var $stepsElemntContent = $(this).prev();
   $('html,body').animate({
     scrollTop: $stepsElemntContent.offset().top
   }, 500);
