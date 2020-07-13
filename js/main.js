@@ -210,7 +210,14 @@ $('.collapse').on('shown.bs.collapse', function (e) {
 
 function removeClassShowAcc() {
   var windowWidth = $(window).width();
-  if (windowWidth <= 767.5) $('.steps__item_content.show').addClass('steps__item_hide-mobile').removeClass('show');else $('.steps__item_content.steps__item_hide-mobile').addClass('show').removeClass('steps__item_hide-mobile');
+
+  if (windowWidth <= 767.5) {
+    $('.steps__item_content.show').addClass('steps__item_hide-mobile').removeClass('show');
+    $('.steps__item_toggle:first-child .steps__item__link').addClass('collapsed');
+  } else {
+    $('.steps__item_content.steps__item_hide-mobile').addClass('show').removeClass('steps__item_hide-mobile');
+    $('.steps__item_toggle:first-child .steps__item__link').removeClass('collapsed');
+  }
 }
 
 ;
