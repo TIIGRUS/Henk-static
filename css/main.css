@@ -8150,7 +8150,7 @@ html {
       max-width: 36.5%; } }
 
 .card-categories {
-  margin: 0 0 10px;
+  margin: 0 0 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -8271,6 +8271,12 @@ html {
           text-decoration-line: underline; }
   .see-more:hover, .see-more:focus {
     text-decoration: none; }
+  .see-more__text-close {
+    display: none; }
+  .see-more:not(.collapsed) .see-more__text-show {
+    display: none; }
+  .see-more:not(.collapsed) .see-more__text-close {
+    display: inline; }
 
 .was-validated .invalid-feedback {
   display: block; }
@@ -8366,7 +8372,7 @@ html {
   counter-reset: request-list;
   list-style: none;
   height: 235px;
-  overflow-y: scroll; }
+  overflow-y: auto; }
 
 .modal__list-item {
   font-size: 1rem;
