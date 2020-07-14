@@ -8428,6 +8428,14 @@ html {
 .modal .btn.btn-block {
   margin: 0 0 1rem; }
 
+.modal-title:not(h4) {
+  font-size: 2rem; }
+  @media (max-width: 1200px) {
+    .modal-title:not(h4) {
+      font-size: -webkit-calc(1.325rem + 0.9vw) ;
+      font-size: -moz-calc(1.325rem + 0.9vw) ;
+      font-size: calc(1.325rem + 0.9vw) ; } }
+
 .custom-control_single {
   padding-left: 1.4rem; }
 
