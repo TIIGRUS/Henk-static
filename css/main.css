@@ -8273,6 +8273,12 @@ html {
 .bootstrap-select.list-two-level .dropdown-item:not(.dropdown-item_title) {
   padding: 0 39px; }
 
+.bootstrap-select .bs-select-all {
+  display: none; }
+
+.bootstrap-select .bs-deselect-all {
+  width: 100% !important; }
+
 .see-more {
   -webkit-text-decoration-line: underline;
      -moz-text-decoration-line: underline;
@@ -8440,9 +8446,6 @@ html {
   .modal .modal-dialog {
     margin-top: 65px; } }
 
-.modal .btn.btn-block {
-  margin: 0 0 1rem; }
-
 .modal-title:not(h4) {
   font-size: 2rem; }
   @media (max-width: 1200px) {
@@ -8450,6 +8453,10 @@ html {
       font-size: -webkit-calc(1.325rem + 0.9vw) ;
       font-size: -moz-calc(1.325rem + 0.9vw) ;
       font-size: calc(1.325rem + 0.9vw) ; } }
+
+@media (max-width: 767.98px) {
+  .modal .btn.btn-block {
+    margin: 0 0 1rem; } }
 
 .custom-control_single {
   padding-left: 1.4rem; }
