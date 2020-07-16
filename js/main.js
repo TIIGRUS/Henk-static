@@ -276,6 +276,10 @@ $('.slider-nav').slick({
   }, false);
 })();
 
+Inputmask({
+  "mask": "+(999) 999-999-999"
+}).mask('.form-control_number');
+
 /***/ }),
 
 /***/ "./src/js/vendor.js":
@@ -299,6 +303,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_select__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap_select__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! slick-carousel */ "./node_modules/slick-carousel/slick/slick.js");
 /* harmony import */ var slick_carousel__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(slick_carousel__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! inputmask */ "./node_modules/inputmask/index.js");
+/* harmony import */ var inputmask__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(inputmask__WEBPACK_IMPORTED_MODULE_6__);
+
 
 
 
