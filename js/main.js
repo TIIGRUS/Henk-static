@@ -203,13 +203,17 @@ $("#select-all").change(function () {
 
 $('.collapse').on('shown.bs.collapse', function (e) {
   var $stepsElemntContent = $(this).prev();
-  $('html,body').animate({
-    scrollTop: $stepsElemntContent.offset().top
-  }, 500);
+  var windowWidth = window.innerWidth;
+
+  if (windowWidth <= 767.5) {
+    $('html,body').animate({
+      scrollTop: $stepsElemntContent.offset().top
+    }, 500);
+  }
 });
 
 function removeClassShowAcc() {
-  var windowWidth = $(window).width();
+  var windowWidth = window.innerWidth;
 
   if (windowWidth <= 767.5) {
     $('.steps__item_content.show').addClass('steps__item_hide-mobile').removeClass('show');
@@ -246,13 +250,7 @@ $('.slider-nav').slick({
     breakpoint: 991.98,
     settings: {
       arrows: false
-    } // settings: "unslick",
-    // breakpoint: 576.5,
-    // settings: {
-    // 	slidesToShow: 3,
-    // 	centerMode: true,
-    // },
-
+    }
   }]
 }); // Example starter JavaScript for disabling form submissions if there are invalid fields
 
