@@ -8462,6 +8462,11 @@ html {
   .custom-control_single .custom-control-label:before, .custom-control_single .custom-control-label:after {
     left: -1.4rem; }
 
+.custom-control a {
+  text-decoration: underline; }
+  .custom-control a:hover {
+    text-decoration: none; }
+
 .custom-select.form-control-lg, .bootstrap-select.form-control_lg .custom-select.dropdown-toggle {
   height: 40px;
   -webkit-border-radius: 0;
