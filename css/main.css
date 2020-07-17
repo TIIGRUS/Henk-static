@@ -8222,6 +8222,8 @@ html {
   .bootstrap-select .dropdown-item_title {
     font-size: 0.875rem;
     font-weight: bold; }
+  .bootstrap-select .dropdown-item_cat {
+    padding: 0 39px; }
   .bootstrap-select .dropdown-item:hover.active, .bootstrap-select .dropdown-item.selected:hover, .bootstrap-select .dropdown-item:focus.active, .bootstrap-select .dropdown-item.selected:focus {
     color: white; }
   .bootstrap-select .dropdown-item span.check-mark {
@@ -8269,9 +8271,6 @@ html {
 
 .bootstrap-select .no-results {
   white-space: normal; }
-
-.bootstrap-select.list-two-level .dropdown-item:not(.dropdown-item_title) {
-  padding: 0 39px; }
 
 .bootstrap-select .bs-select-all {
   display: none; }
