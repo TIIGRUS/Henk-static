@@ -456,7 +456,7 @@ mark,
       max-width: 720px; } }
   @media (min-width: 992px) {
     .container {
-      max-width: 960px; } }
+      max-width: 100%; } }
 
 .container-fluid, .container-sm, .container-md, .container-lg {
   width: 100%;
@@ -475,7 +475,7 @@ mark,
 
 @media (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
-    max-width: 960px; } }
+    max-width: 100%; } }
 
 .row {
   display: -webkit-box;
@@ -9164,5 +9164,9 @@ html {
     .slider__img-caption {
       right: 15px;
       margin-left: 15px; } }
+
+.container {
+  padding-right: 0;
+  padding-left: 0; }
 
 /*# sourceMappingURL=main.css.map */
