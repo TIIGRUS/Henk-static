@@ -8202,7 +8202,7 @@ html {
   .card-categories__img {
     margin: 0;
     width: 100%;
-    height: 125px;
+    height: 125px !important;
     -o-object-fit: cover;
        object-fit: cover; }
   .card-categories:hover, .card-categories:focus {
