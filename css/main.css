@@ -8088,46 +8088,47 @@ html {
   .tab-content .tab-pane_categories {
     padding: 20px 12px 10px; }
 
-.form-control_icon {
-  background: url(../images/sprites/svg/chevron.svg) no-repeat #fff;
-  background-position: right 0.53571rem center;
-  padding-right: 1.875rem;
-  -webkit-background-size: 14px 7px;
-     -moz-background-size: 14px 7px;
-          background-size: 14px 7px; }
-
-.form-control_icon_left {
-  background: url(../images/sprites/svg/search.svg) no-repeat #fff;
-  background-position: 12px center;
-  padding-left: 50px !important;
-  -webkit-background-size: 25px 25px;
-     -moz-background-size: 25px;
-          background-size: 25px; }
-
-.form-control.is-invalid:focus, .bootstrap-select.form-control_lg .is-invalid.dropdown-toggle:focus, .bootstrap-select.form-control_lg .dropdown-toggle.bs-invalid:focus, .bootstrap-select.show .is-invalid.form-control, .bootstrap-select.show .form-control.bs-invalid,
-.bootstrap-select.show.form-control_lg .is-invalid.dropdown-toggle, .bootstrap-select.show.form-control_lg .dropdown-toggle.bs-invalid, .bootstrap-select .form-control.bs-invalid:focus, .form-control:invalid:focus, .bootstrap-select.form-control_lg .dropdown-toggle:invalid:focus, .bootstrap-select.show .form-control:invalid,
-.bootstrap-select.show.form-control_lg .dropdown-toggle:invalid {
-  -webkit-box-shadow: 0 0 5px 0.1rem 0 0 5px 0.1rem rgba(14, 49, 84, 0.25);
-     -moz-box-shadow: 0 0 5px 0.1rem 0 0 5px 0.1rem rgba(14, 49, 84, 0.25);
-          box-shadow: 0 0 5px 0.1rem 0 0 5px 0.1rem rgba(14, 49, 84, 0.25); }
-
-.form-control.dropdown-toggle:after, .form-control.dropdown-toggle:before {
-  display: none; }
-
-.form-control.dropdown-toggle:hover, .form-control.dropdown-toggle:focus, .bootstrap-select.form-control_lg .dropdown-toggle:focus, .bootstrap-select.show .dropdown-toggle.form-control,
-.bootstrap-select.show.form-control_lg .dropdown-toggle {
-  outline: none !important; }
-
-.form-control-lg, .bootstrap-select.form-control_lg .dropdown-toggle {
-  border-color: #E6E6E6; }
-
-.form-control_lg_default {
-  height: 40px;
-  font-size: 18px; }
-
-.form-control:hover {
-  color: #495057;
-  background-color: #fff; }
+.form-control {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important; }
+  .form-control_icon {
+    background: url(../images/sprites/svg/chevron.svg) no-repeat #fff;
+    background-position: right 0.53571rem center;
+    padding-right: 1.875rem;
+    -webkit-background-size: 14px 7px;
+       -moz-background-size: 14px 7px;
+            background-size: 14px 7px; }
+  .form-control_icon_left {
+    background: url(../images/sprites/svg/search.svg) no-repeat #fff;
+    background-position: 12px center;
+    padding-left: 50px !important;
+    -webkit-background-size: 25px 25px;
+       -moz-background-size: 25px;
+            background-size: 25px; }
+  .form-control.is-invalid:focus, .bootstrap-select.form-control_lg .is-invalid.dropdown-toggle:focus, .bootstrap-select.form-control_lg .dropdown-toggle.bs-invalid:focus, .bootstrap-select.show .is-invalid.form-control, .bootstrap-select.show .form-control.bs-invalid,
+  .bootstrap-select.show.form-control_lg .is-invalid.dropdown-toggle, .bootstrap-select.show.form-control_lg .dropdown-toggle.bs-invalid, .bootstrap-select .form-control.bs-invalid:focus, .form-control:invalid:focus, .bootstrap-select.form-control_lg .dropdown-toggle:invalid:focus, .bootstrap-select.show .form-control:invalid,
+  .bootstrap-select.show.form-control_lg .dropdown-toggle:invalid {
+    -webkit-box-shadow: 0 0 5px 0.1rem 0 0 5px 0.1rem rgba(14, 49, 84, 0.25);
+       -moz-box-shadow: 0 0 5px 0.1rem 0 0 5px 0.1rem rgba(14, 49, 84, 0.25);
+            box-shadow: 0 0 5px 0.1rem 0 0 5px 0.1rem rgba(14, 49, 84, 0.25); }
+  .form-control.dropdown-toggle:after, .form-control.dropdown-toggle:before {
+    display: none; }
+  .form-control.dropdown-toggle:hover, .form-control.dropdown-toggle:focus, .bootstrap-select.form-control_lg .dropdown-toggle:focus, .bootstrap-select.show .dropdown-toggle.form-control,
+  .bootstrap-select.show.form-control_lg .dropdown-toggle {
+    outline: none !important; }
+  .form-control-lg, .bootstrap-select.form-control_lg .dropdown-toggle {
+    border-color: #E6E6E6; }
+    .form-control-lg:not(.dropdown-toggle), .bootstrap-select.form-control_lg .dropdown-toggle:not(.dropdown-toggle) {
+      border-color: #E6E6E6 !important; }
+      .form-control-lg:not(.dropdown-toggle):focus, .bootstrap-select.form-control_lg .dropdown-toggle:not(.dropdown-toggle):focus {
+        border-color: #2071c1 !important; }
+  .form-control_lg_default {
+    height: 40px;
+    font-size: 18px; }
+  .form-control:hover {
+    color: #495057;
+    background-color: #fff; }
 
 .col_find_prod {
   -webkit-box-flex: 0;
