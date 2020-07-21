@@ -8125,6 +8125,10 @@ html {
   height: 40px;
   font-size: 18px; }
 
+.form-control:hover {
+  color: #495057;
+  background-color: #fff; }
+
 .col_find_prod {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 100%;
