@@ -8562,7 +8562,10 @@ html {
 
 .table-list th, .table-list__item {
   text-align: center;
-  padding: 10px 6px; }
+  padding: 10px 6px;
+  background: none !important;
+  border: none !important;
+  vertical-align: middle; }
   @media (min-width: 992px) {
     .table-list th, .table-list__item {
       padding: 10px 12px; } }
