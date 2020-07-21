@@ -8564,20 +8564,45 @@ html {
   .table-list__header .bootstrap-select:not(.show) .is-selected.form-control_icon {
     background-image: url(../images/sprites/svg/filter-solid.svg); }
 
-.table-list th, .table-list__item {
+.table-list__th, .table-list__item {
   text-align: center;
   padding: 10px 6px;
   background: none !important;
   border: none !important;
   vertical-align: middle; }
   @media (min-width: 992px) {
-    .table-list th, .table-list__item {
+    .table-list__th, .table-list__item {
       padding: 10px 12px; } }
   @media (min-width: 576px) and (max-width: 991.98px) {
-    .table-list th, .table-list__item {
-      padding: 10px 1px; }
-      .table-list th .custom-control, .table-list__item .custom-control {
+    .table-list__th, .table-list__item {
+      padding: 10px 3px;
+      font-size: 0.875rem; }
+      .table-list__th .custom-control, .table-list__item .custom-control {
         margin: 0 7px 0 0; } }
+
+@media (min-width: 992px) {
+  .table-list__th_carrier {
+    width: 100px; }
+  .table-list__th_color {
+    width: 86px; }
+  .table-list__th_thickness {
+    width: 118px; }
+  .table-list__th_mesh {
+    width: 88px; }
+  .table-list__th_link {
+    width: 91px; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .table-list__th_carrier {
+    width: 78px; }
+  .table-list__th_color {
+    width: 64px; }
+  .table-list__th_thickness {
+    width: 96px; }
+  .table-list__th_mesh {
+    width: 66px; }
+  .table-list__th_link {
+    width: 80px; } }
 
 .table-list__title {
   font-weight: bold;
@@ -8606,7 +8631,7 @@ html {
     text-decoration: none; }
   @media (min-width: 768px) {
     .table-list__item_link a {
-      max-width: 70px; } }
+      min-width: 75px; } }
 
 @media (max-width: 991.98px) {
   .table-list__item_tape {
