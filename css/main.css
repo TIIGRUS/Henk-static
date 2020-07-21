@@ -8639,6 +8639,10 @@ html {
     max-width: 132px; } }
 
 @media (min-width: 768px) {
+  .table-list__item {
+    font-size: 0.875rem; } }
+
+@media (min-width: 768px) {
   .table-list__row:nth-child(even) {
     background: rgba(230, 230, 230, 0.5); } }
 
