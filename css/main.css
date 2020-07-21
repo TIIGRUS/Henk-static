@@ -8099,7 +8099,7 @@ html {
 .form-control_icon_left {
   background: url(../images/sprites/svg/search.svg) no-repeat #fff;
   background-position: 12px center;
-  padding-left: 50px;
+  padding-left: 50px !important;
   -webkit-background-size: 25px 25px;
      -moz-background-size: 25px;
           background-size: 25px; }
