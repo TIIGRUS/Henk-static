@@ -9151,7 +9151,8 @@ html {
   padding: 5px;
   display: block;
   font-size: 1.125rem;
-  border: 1px solid #fff; }
+  border: 1px solid #fff;
+  font-style: normal; }
   @media (min-width: 992px) {
     .slider__img-caption {
       left: 0; } }
