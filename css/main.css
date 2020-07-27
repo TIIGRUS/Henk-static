@@ -8001,21 +8001,6 @@ html {
     display: table;
     clear: both; }
 
-.elementor-heading-title {
-  line-height: 10px;
-  font-size: 18px; }
-  @media (min-width: 992px) {
-    .elementor-heading-title {
-      font-size: 24px; } }
-
-.page {
-  font-size: 14px;
-  line-height: 16px; }
-  @media (min-width: 992px) {
-    .page {
-      font-size: 18px;
-      line-height: 21px; } }
-
 .btn:focus {
   -webkit-box-shadow: 0 0 5px 0.1rem rgba(14, 49, 84, 0.25);
      -moz-box-shadow: 0 0 5px 0.1rem rgba(14, 49, 84, 0.25);
@@ -9213,9 +9198,188 @@ html {
       right: 15px;
       margin-left: 15px; } }
 
+.container-main {
+  max-width: 1140px; }
+
 @media (min-width: 768px) {
   .container {
     padding-right: 0;
     padding-left: 0; } }
+
+.lang-list-toggle {
+  color: #fff; }
+  .lang-list-toggle:hover, .lang-list-toggle:focus {
+    color: #fff; }
+
+.lang-list__item {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .lang-list__item:after {
+    content: '';
+    height: 100%;
+    width: 1px;
+    background: #fff;
+    right: 0;
+    position: absolute; }
+
+.lang-list__link {
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  padding: 1px 4px; }
+  .lang-list__link:hover {
+    text-decoration: underline;
+    color: #fff; }
+  .lang-list__link_active {
+    background: #fff;
+    color: #0E3154; }
+    .lang-list__link_active:hover {
+      color: #0E3154; }
+
+.elementor-heading-title {
+  line-height: 10px;
+  font-size: 18px; }
+  @media (min-width: 992px) {
+    .elementor-heading-title {
+      font-size: 24px; } }
+
+.page {
+  font-size: 14px;
+  line-height: 16px; }
+  @media (min-width: 992px) {
+    .page {
+      font-size: 18px;
+      line-height: 21px; } }
+
+/* Шапка сайта */
+.header_address a {
+  color: #fff; }
+
+.header_address a:hover {
+  color: #fff; }
+
+.elementor-nav-menu .elementor-item {
+  padding: 5px 15px !important; }
+
+.elementor-nav-menu .menu-item:not(:last-child) .elementor-item::after {
+  border-right: 1px solid white;
+  height: 100%;
+  opacity: 1 !important;
+  right: 0; }
+
+.elementor-top-section {
+  padding: 10px 0 !important; }
+
+.elementor-nav-menu .elementor-item:hover {
+  text-decoration: none; }
+
+.elementor-sticky {
+  padding: 0 !important;
+  opacity: 0;
+  z-index: -1;
+  height: 0; }
+
+.elementor-sticky--active {
+  opacity: 1;
+  z-index: 99;
+  height: auto !important;
+  padding: 7px 0 !important; }
+
+/* Шапка сайта - Размер логотипа */
+.header-logo img {
+  width: 258px !important; }
+
+/* Шапка сайта - Размер логотипа для липкого меню */
+.elementor-sticky .header-logo_sticky img {
+  width: 125px !important; }
+
+/*фоны и отступы секций*/
+.grey_bg_section {
+  background-color: #cfd1d1; }
+
+.blue_bg_section {
+  background-color: #0a3456; }
+
+.section_pb {
+  padding-bottom: 50px !important; }
+
+.section_pt {
+  padding-top: 50px; }
+
+/*фоны текстовых блоков*/
+.grey_bg_text_block {
+  background-color: #cfd1d1;
+  padding-top: 7px; }
+
+.white_bg {
+  background-color: #ffffff; }
+
+/*заголовки*/
+.h2_row,
+.h2_row_white {
+  max-height: 40px;
+  margin-bottom: 25px !important;
+  padding-left: 7px; }
+
+.h2_row .elementor-heading-title {
+  color: #ffffff; }
+
+.h2_row_white {
+  background-color: #FFFFFF !important; }
+
+.h3_row {
+  background-color: #0a3456;
+  height: 50px; }
+
+.h3_row h3 {
+  color: #ffffff; }
+
+.lead_text_block_30 {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+  line-height: 36px;
+  color: #0a3456; }
+
+.lead_text_block_24 {
+  margin: auto;
+  text-align: center;
+  font-size: 24px;
+  line-height: 29px;
+  color: #0a3456; }
+
+/*3 колонки отступы*/
+.left_col {
+  margin: 0 10px 0 0; }
+
+.center_col {
+  margin: 0 10px 0 10px; }
+
+.right_col {
+  margin: 0 0 0 10px; }
+
+/*отступ текстов и заголовков в колонках*/
+.col_text {
+  padding-left: 17px;
+  padding-right: 17px; }
+
+.col_heading {
+  padding: 10px 17px; }
+
+.home_page_title {
+  height: 600px;
+  background-color: #CCCCCC; }
+
+.inner_page_title {
+  height: 50vh;
+  background-color: #CCCCCC; }
+
+.about_us_icons .elementor-image {
+  background-color: #0a3456; }
 
 /*# sourceMappingURL=main.css.map */
