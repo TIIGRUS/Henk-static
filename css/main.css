@@ -8022,8 +8022,9 @@ html {
   opacity: 1 !important;
   right: 0; }
 
-.elementor-top-section {
-  padding: 10px 0 !important; }
+.header__section {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important; }
 
 .elementor-nav-menu .elementor-item:hover {
   text-decoration: none; }
@@ -8038,7 +8039,7 @@ html {
   opacity: 1;
   z-index: 9;
   height: auto !important;
-  padding: 7px 0 !important; }
+  padding: 7px 15px !important; }
 
 /* Шапка сайта - Размер логотипа для липкого меню */
 .elementor-sticky .main-logo_sticky img {
@@ -8163,11 +8164,43 @@ html {
 .footer__section-bottom p {
   margin: 0; }
 
+.elementor-section-columns .elementor-widget-wrap {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+
+.elementor-section-columns .elementor-row {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.elementor-section-columns.elementor-section-columns_to-headings .elementor-widget-image {
+  margin: 0; }
+
+.elementor-section-columns.elementor-section-columns_to-headings .elementor-widget-text-editor {
+  margin: 12px 0 0;
+  height: 100%; }
+
 /* Media */
 @media (min-width: 768px) {
   /* Шапка сайта - Размер логотипа*/
   .main-logo img {
-    width: 258px !important; } }
+    width: 258px !important; }
+  /* Три колонки отступы */
+  .elementor-section-columns .elementor-column.elementor-col-33,
+  .elementor-section-columns .elementor-column[data-col="33"] {
+    width: -webkit-calc(33.333% - 12px);
+    width: -moz-calc(33.333% - 12px);
+    width: calc(33.333% - 12px); } }
 
 @media (max-width: 1155px) {
   .nav-menu-main .elementor-item {
@@ -8226,7 +8259,7 @@ html {
 .h2_row,
 .h2_row_white {
   max-height: 40px;
-  margin-bottom: 25px !important;
+  margin-bottom: 0 !important;
   padding-left: 7px; }
 
 .h2_row .elementor-heading-title {
@@ -8274,23 +8307,14 @@ html {
   line-height: 29px;
   color: #0a3456; }
 
-/*3 колонки отступы*/
-.left_col {
-  margin: 0 10px 0 0; }
-
-.center_col {
-  margin: 0 10px 0 10px; }
-
-.right_col {
-  margin: 0 0 0 10px; }
-
 /*отступ текстов и заголовков в колонках*/
 .col_text {
   padding-left: 17px;
   padding-right: 17px; }
 
 .col_heading {
-  padding: 10px 17px; }
+  padding: 10px 17px;
+  margin: 0 !important; }
 
 .home_page_title {
   height: 600px;
