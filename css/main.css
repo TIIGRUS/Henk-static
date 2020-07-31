@@ -9238,6 +9238,7 @@ html {
       background: #fff;
       color: #0E3154; }
       .lang-list__link_active:hover {
-        color: #0E3154; }
+        color: #0E3154;
+        text-decoration: none; }
 
 /*# sourceMappingURL=main.css.map */
