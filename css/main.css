@@ -9212,12 +9212,6 @@ html {
       -ms-flex-pack: end;
           justify-content: flex-end;
   padding: 5px 0 15px; }
-  .lang-list-outer {
-    background: none !important; }
-  .lang-list-toggle {
-    color: #fff; }
-    .lang-list-toggle:hover, .lang-list-toggle:focus {
-      color: #fff; }
   .lang-list__item {
     position: relative;
     display: -webkit-box;
