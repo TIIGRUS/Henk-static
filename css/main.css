@@ -8222,7 +8222,8 @@ html {
 
 .bootstrap-select .dropdown-item {
   white-space: normal;
-  padding: 0 15px 3px; }
+  padding: 0 15px 3px;
+  outline: 0; }
   .bootstrap-select .dropdown-item_title {
     font-weight: bold; }
   .bootstrap-select .dropdown-item_cat {
@@ -8237,6 +8238,8 @@ html {
             transform: translateY(-50%) !important;
     top: 50% !important;
     margin: -2px 0 0; }
+  .bootstrap-select .dropdown-item:hover:focus {
+    color: #fff; }
 
 .bootstrap-select .filter-option {
   display: -webkit-box;
@@ -9240,5 +9243,8 @@ html {
       .lang-list__link_active:hover {
         color: #0E3154;
         text-decoration: none; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .lang-list {
+      margin: 0; } }
 
 /*# sourceMappingURL=main.css.map */
