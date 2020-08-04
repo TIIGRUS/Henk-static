@@ -7778,7 +7778,7 @@ html {
           box-shadow: 0 0 5px 0.1rem rgba(14, 49, 84, 0.25) !important; }
 
 .section-title {
-  min-height: 40px;
+  min-height: 28px;
   background: #0E3154;
   color: white;
   display: -webkit-box;
