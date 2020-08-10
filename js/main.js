@@ -226,9 +226,12 @@ function removeClassShowAcc() {
 
 ;
 $(function () {
+  var resizeWindow = $(window).width();
   removeClassShowAcc();
   $(window).on("resize", function () {
-    removeClassShowAcc();
+    if (resizeWindow != $(window).width()) {
+      removeClassShowAcc();
+    }
   });
 }); // init slick carousel
 
