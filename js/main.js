@@ -202,12 +202,12 @@ $("#select-all").change(function () {
 }); // scroll screen to content to toggle accordion
 
 $('.collapse').on('shown.bs.collapse', function (e) {
-  var $stepsElemntContent = $(this).prev();
   var windowWidth = window.innerWidth;
 
   if (windowWidth <= 767.5) {
+    var $stepsElemntContent = $(this).prev();
     $('html,body').animate({
-      scrollTop: $stepsElemntContent.offset().top
+      scrollTop: $stepsElemntContent.offset().top + -58
     }, 500);
   }
 });
