@@ -228,8 +228,9 @@ function removeClassShowAcc() {
 $(function () {
   var resizeWindow = $(window).width();
   removeClassShowAcc();
-  $(window).on("resize", function () {
-    if (resizeWindow != $(window).width()) {
+  $(window).on('resize', function () {
+    if ($(this).width() !== resizeWindow) {
+      resizeWindow = $(this).width();
       removeClassShowAcc();
     }
   });
@@ -278,7 +279,7 @@ $('.slider-nav').slick({
 })();
 
 Inputmask({
-  "mask": "+(999) 999-999-999"
+  "regex": "[0-9()./\\-\\ ]*"
 }).mask('.form-control_number');
 
 /***/ }),
