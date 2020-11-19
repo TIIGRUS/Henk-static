@@ -9243,11 +9243,7 @@ html {
           font-size: calc(1.99375rem + 8.925vw) ; } }
       @media (min-width: 768px) {
         .steps__item__counter {
-          display: block;
-          margin: -5px 0 0; } }
-      @media (min-width: 992px) {
-        .steps__item__counter {
-          margin: -10px 0 0; } }
+          display: block; } }
     .steps__item__text {
       font-weight: 500;
       position: relative; }
